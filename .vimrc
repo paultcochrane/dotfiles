@@ -87,8 +87,6 @@ else
 
 endif " has("autocmd")
 
-:command Svkdiff !svk diff | less
-
 fun! ShowFuncName()
     let lnum = line(".")
     let col = col(".")

@@ -135,3 +135,12 @@ function InsertFunctionStub()
     :execute "normal I    return;\n\<Esc>"
     :execute "normal I}\n\<Esc>"
 endfunction
+
+let s:extfname = expand("%:e")
+if s:extfname ==? "f90"
+    let fortran_free_source=1
+    unlet! fortran_fixed_source
+else
+    let fortran_free_source=1
+    unlet! fortran_fixed_source
+endif

@@ -114,6 +114,8 @@ map f :call ShowFuncName() <CR>
 " recognise .inc as being Fortran files
 :autocmd BufRead,BufNewFile *.i set ft=fortran
 :autocmd BufRead,BufNewFile *.inc set ft=fortran
+" recognise .runfile as being ini files
+:autocmd BufRead,BufNewFile *.runfile set ft=dosini
 
 function InsertFunctionStub()
     :execute "normal I//! Brief description of function\n\<Esc>"

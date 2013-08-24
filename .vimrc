@@ -35,6 +35,9 @@ set shiftwidth=4
 set textwidth=76
 set scrolloff=10        " always see the top or bottom 10 lines in the window
 
+" stop folds from occuring
+set nofoldenable
+
 " map the leader key to comma (copied from Gary Bernhardt's .vimrc)
 let mapleader=","
 

@@ -38,6 +38,9 @@ set scrolloff=10        " always see the top or bottom 10 lines in the window
 " map the leader key to comma (copied from Gary Bernhardt's .vimrc)
 let mapleader=","
 
+" ,f => open file using command-t plugin
+map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
+
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
 

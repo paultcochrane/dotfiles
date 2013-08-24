@@ -1,1 +1,2 @@
 initialZoom page
+urlCommand "/usr/bin/epiphany %s"

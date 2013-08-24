@@ -111,6 +111,9 @@ map f :call ShowFuncName() <CR>
 " recognise .pmc and .ops as being C files
 :autocmd BufRead,BufNewFile *.pmc set ft=c
 :autocmd BufRead,BufNewFile *.ops set ft=c
+" recognise .inc as being Fortran files
+:autocmd BufRead,BufNewFile *.i set ft=fortran
+:autocmd BufRead,BufNewFile *.inc set ft=fortran
 
 function InsertFunctionStub()
     :execute "normal I//! Brief description of function\n\<Esc>"

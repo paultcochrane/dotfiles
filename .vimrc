@@ -119,23 +119,6 @@ map f :call ShowFuncName() <CR>
 " recognise .cls as being TeX files
 :autocmd BufRead,BufNewFile *.cls set ft=tex
 
-function InsertFunctionStub()
-    :execute "normal I//! Brief description of function\n\<Esc>"
-    :execute "normal I/*\!\n\<Esc>"
-    :execute "normal I* More expansive description of function\n\<Esc>"
-    :execute "normal I*\n\<Esc>"
-    :execute "normal I* \\param parameter_name description of the parameter\n\<Esc>"
-    :execute "normal I*\n\<Esc>"
-    :execute "normal I* \\return description of the return value\n\<Esc>"
-    :execute "normal I*/\n\<Esc>"
-    :execute "normal Ivoid function_name(void parameter_name)\n\<Esc>"
-    :execute "normal I{\n\<Esc>"
-    :execute "normal I\n\<Esc>"
-    :execute "normal I\n\<Esc>"
-    :execute "normal I    return;\n\<Esc>"
-    :execute "normal I}\n\<Esc>"
-endfunction
-
 let s:extfname = expand("%:e")
 if s:extfname ==? "f90"
     let fortran_free_source=1

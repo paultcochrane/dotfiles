@@ -127,3 +127,10 @@ else
     let fortran_free_source=1
     unlet! fortran_fixed_source
 endif
+
+" running tests
+map <leader>a :call RunTests()<cr>
+
+function! RunTests()
+    exec ":!prove t/*.t"
+endfunction

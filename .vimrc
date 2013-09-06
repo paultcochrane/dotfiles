@@ -144,5 +144,11 @@ endfunction
 map <leader>a :call RunTests()<cr>
 
 function! RunTests()
-    exec ":!prove t/*.t"
+    " run Perl tests
+    if isdirectory('t')
+	exec ":!prove t/*.t"
+    " run Python tests
+    elseif isdirectory('tests')
+	exec ":!python -m unittest tests/*.py"
+    endif
 endfunction

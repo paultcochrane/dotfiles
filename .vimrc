@@ -146,7 +146,11 @@ map <leader>a :call RunTests()<cr>
 function! RunTests()
     " run Perl tests
     if isdirectory('t')
-	exec ":!prove t/*.t"
+	if filereadable("t/harness")
+	    exec ":!perl t/harness"
+	else
+	    exec ":!prove t/*.t"
+	endif
     " run Python tests
     elseif isdirectory('tests')
 	exec ":!python -m unittest tests/*.py"

@@ -128,6 +128,18 @@ else
     unlet! fortran_fixed_source
 endif
 
+" running make
+map <leader>m :call RunMake('')<cr>
+map <leader>M :call RunMake('clean')<cr>
+
+function! RunMake(cleanoption)
+    if a:cleanoption == 'clean'
+	exec ":!make clean && make"
+    else
+	exec ":!make"
+    endif
+endfunction
+
 " running tests
 map <leader>a :call RunTests()<cr>
 

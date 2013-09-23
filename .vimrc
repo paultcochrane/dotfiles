@@ -34,6 +34,7 @@ set softtabstop=4
 set shiftwidth=4
 set textwidth=76
 set scrolloff=10        " always see the top or bottom 10 lines in the window
+set cursorline          " highlight current line
 
 " stop folds from occuring
 set nofoldenable

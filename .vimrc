@@ -34,7 +34,6 @@ set softtabstop=4
 set shiftwidth=4
 set textwidth=76
 set scrolloff=10        " always see the top or bottom 10 lines in the window
-set cursorline          " highlight current line
 
 " stop folds from occuring
 set nofoldenable
@@ -61,6 +60,10 @@ if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
 endif
+
+" cursor highlighting
+set cursorline          " highlight current line
+highlight CursorLine ctermbg=Black cterm=none
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")

@@ -1,14 +1,6 @@
-" An example for a vimrc file.
-"
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2002 Sep 19
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
-
+" my .vimrc file: Paul Cochrane
+" originally from Bram Moolenaar <Bram@vim.org> as part of vim
+ 
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
@@ -21,11 +13,7 @@ set nocompatible
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
-else
-  set backup		" keep a backup file
-endif
+set backup		" keep a backup file
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
@@ -44,15 +32,8 @@ let mapleader=","
 " ,f => open file using command-t plugin
 map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 
-" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
-" let &guioptions = substitute(&guioptions, "t", "", "g")
-
 " Don't use Ex mode, use Q for formatting
 map Q gq
-
-" This is an alternative that also works in block mode, but the deleted
-" text is lost and it only works for putting the current register.
-"vnoremap p "_dp
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -63,6 +44,8 @@ endif
 
 " cursor highlighting
 set cursorline          " highlight current line
+" highlight the background "sort of grey", i.e. Black (which isn't actually
+" black when using the gnome colours in Terminator)
 highlight CursorLine ctermbg=Black cterm=none
 
 " Only do this part when compiled with support for autocommands.

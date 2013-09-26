@@ -94,6 +94,19 @@ if has("autocmd")
   " This makes sure that .part files are treated as if they were html
   autocmd BufRead,BufNewFile *.part set ft=html
   
+  " recognise .t as being perl files
+  autocmd BufRead,BufNewFile *.t set ft=perl
+  " recognise .pmc and .ops as being C files
+  autocmd BufRead,BufNewFile *.pmc set ft=c
+  autocmd BufRead,BufNewFile *.ops set ft=c
+  " recognise .inc as being Fortran files
+  autocmd BufRead,BufNewFile *.i set ft=fortran
+  autocmd BufRead,BufNewFile *.inc set ft=fortran
+  " recognise .runfile as being ini files
+  autocmd BufRead,BufNewFile *.runfile set ft=dosini
+  " recognise .cls as being TeX files
+  autocmd BufRead,BufNewFile *.cls set ft=tex
+
 else
 
   set autoindent		" always set autoindenting on
@@ -109,19 +122,6 @@ fun! ShowFuncName()
     call search("\\%" . lnum . "l" . "\\%" . col . "c")
 endfun
 map f :call ShowFuncName() <CR> 
-
-" recognise .t as being perl files
-:autocmd BufRead,BufNewFile *.t set ft=perl
-" recognise .pmc and .ops as being C files
-:autocmd BufRead,BufNewFile *.pmc set ft=c
-:autocmd BufRead,BufNewFile *.ops set ft=c
-" recognise .inc as being Fortran files
-:autocmd BufRead,BufNewFile *.i set ft=fortran
-:autocmd BufRead,BufNewFile *.inc set ft=fortran
-" recognise .runfile as being ini files
-:autocmd BufRead,BufNewFile *.runfile set ft=dosini
-" recognise .cls as being TeX files
-:autocmd BufRead,BufNewFile *.cls set ft=tex
 
 let s:extfname = expand("%:e")
 if s:extfname ==? "f90"

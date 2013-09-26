@@ -144,4 +144,18 @@ function! RunTests()
     endif
 endfunction
 
+" remove trailing whitespace (copied from the example on www.vimcasts.org)
+nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+
 " vim: expandtab shiftwidth=4

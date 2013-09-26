@@ -13,11 +13,11 @@ set nocompatible
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-set backup		" keep a backup file
-set history=50		" keep 50 lines of command line history
-set ruler		" show the cursor position all the time
-set showcmd		" display incomplete commands
-set incsearch		" do incremental searching
+set backup              " keep a backup file
+set history=50          " keep 50 lines of command line history
+set ruler               " show the cursor position all the time
+set showcmd             " display incomplete commands
+set incsearch           " do incremental searching
 set softtabstop=4
 set shiftwidth=4
 set textwidth=76
@@ -38,8 +38,8 @@ map Q gq
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
-  syntax on
-  set hlsearch
+    syntax on
+    set hlsearch
 endif
 
 " cursor highlighting
@@ -51,48 +51,48 @@ highlight CursorLine ctermbg=Black cterm=none
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
-  " Enable file type detection.
-  " Use the default filetype settings, so that mail gets 'tw' set to 72,
-  " 'cindent' is on in C files, etc.
-  " Also load indent files, to automatically do language-dependent indenting.
-  filetype plugin indent on
+    " Enable file type detection.
+    " Use the default filetype settings, so that mail gets 'tw' set to 72,
+    " 'cindent' is on in C files, etc.
+    " Also load indent files, to automatically do language-dependent indenting.
+    filetype plugin indent on
 
-  " Put these in an autocmd group, so that we can delete them easily.
-  augroup vimrcEx
-  au!
+    " Put these in an autocmd group, so that we can delete them easily.
+    augroup vimrcEx
+    au!
 
-  " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=78
+    " For all text files set 'textwidth' to 78 characters.
+    autocmd FileType text setlocal textwidth=78
 
-  " When editing a file, always jump to the last known cursor position.
-  " Don't do it when the position is invalid or when inside an event handler
-  " (happens when dropping a file on gvim).
-  autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \   exe "normal g`\"" |
-    \ endif
+    " When editing a file, always jump to the last known cursor position.
+    " Don't do it when the position is invalid or when inside an event handler
+    " (happens when dropping a file on gvim).
+    autocmd BufReadPost *
+      \ if line("'\"") > 0 && line("'\"") <= line("$") |
+      \   exe "normal g`\"" |
+      \ endif
 
-  augroup END
+    augroup END
 
-  " This makes sure that .part files are treated as if they were html
-  autocmd BufRead,BufNewFile *.part set ft=html
+    " This makes sure that .part files are treated as if they were html
+    autocmd BufRead,BufNewFile *.part set ft=html
   
-  " recognise .t as being perl files
-  autocmd BufRead,BufNewFile *.t set ft=perl
-  " recognise .pmc and .ops as being C files
-  autocmd BufRead,BufNewFile *.pmc set ft=c
-  autocmd BufRead,BufNewFile *.ops set ft=c
-  " recognise .inc as being Fortran files
-  autocmd BufRead,BufNewFile *.i set ft=fortran
-  autocmd BufRead,BufNewFile *.inc set ft=fortran
-  " recognise .runfile as being ini files
-  autocmd BufRead,BufNewFile *.runfile set ft=dosini
-  " recognise .cls as being TeX files
-  autocmd BufRead,BufNewFile *.cls set ft=tex
+    " recognise .t as being perl files
+    autocmd BufRead,BufNewFile *.t set ft=perl
+    " recognise .pmc and .ops as being C files
+    autocmd BufRead,BufNewFile *.pmc set ft=c
+    autocmd BufRead,BufNewFile *.ops set ft=c
+    " recognise .inc as being Fortran files
+    autocmd BufRead,BufNewFile *.i set ft=fortran
+    autocmd BufRead,BufNewFile *.inc set ft=fortran
+    " recognise .runfile as being ini files
+    autocmd BufRead,BufNewFile *.runfile set ft=dosini
+    " recognise .cls as being TeX files
+    autocmd BufRead,BufNewFile *.cls set ft=tex
 
 else
 
-  set autoindent		" always set autoindenting on
+    set autoindent              " always set autoindenting on
 
 endif " has("autocmd")
 
@@ -121,9 +121,9 @@ map <leader>M :call RunMake('clean')<cr>
 
 function! RunMake(cleanoption)
     if a:cleanoption == 'clean'
-	exec ":!make clean && make"
+        exec ":!make clean && make"
     else
-	exec ":!make"
+        exec ":!make"
     endif
 endfunction
 
@@ -133,13 +133,15 @@ map <leader>a :call RunTests()<cr>
 function! RunTests()
     " run Perl tests
     if isdirectory('t')
-	if filereadable("t/harness")
-	    exec ":!perl t/harness"
-	else
-	    exec ":!prove t/*.t"
-	endif
+        if filereadable("t/harness")
+            exec ":!perl t/harness"
+        else
+            exec ":!prove t/*.t"
+        endif
     " run Python tests
     elseif isdirectory('tests')
-	exec ":!python -m unittest discover -v tests"
+        exec ":!python -m unittest discover -v tests"
     endif
 endfunction
+
+" vim: expandtab shiftwidth=4

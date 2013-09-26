@@ -1,6 +1,6 @@
 " my .vimrc file: Paul Cochrane
 " originally from Bram Moolenaar <Bram@vim.org> as part of vim
- 
+
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
@@ -76,7 +76,7 @@ if has("autocmd")
 
     " This makes sure that .part files are treated as if they were html
     autocmd BufRead,BufNewFile *.part set ft=html
-  
+
     " recognise .t as being perl files
     autocmd BufRead,BufNewFile *.t set ft=perl
     " recognise .pmc and .ops as being C files
@@ -104,7 +104,7 @@ fun! ShowFuncName()
     echohl None
     call search("\\%" . lnum . "l" . "\\%" . col . "c")
 endfun
-map f :call ShowFuncName() <CR> 
+map f :call ShowFuncName() <CR>
 
 let s:extfname = expand("%:e")
 if s:extfname ==? "f90"

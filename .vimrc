@@ -158,4 +158,7 @@ function! Preserve(command)
 endfunction
 nmap <leader>$ :call Preserve("%s/\\s\\+$//e")<CR>
 
+" use "par" as the external formatter (aptitude install par)
+set formatprg=par
+
 " vim: expandtab shiftwidth=4

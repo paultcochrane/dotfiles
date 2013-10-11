@@ -6,6 +6,13 @@ servers = (
     ssl_verify = "no";
     autoconnect = "no";
     chatnet = "IRCnet";
+  },
+  {
+    address = "bnc.dev5media.de";
+    port = "2133";
+    use_ssl = "yes";
+    autoconnect = "no";
+    chatnet = "IRCnet";
   }
 );
 

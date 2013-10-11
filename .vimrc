@@ -165,4 +165,8 @@ endif
 
 " toggle spell checking with ,s
 nmap <silent> <leader>s :set spell!<CR>
+
+" use New Zealand English and German by default
+set spelllang=en_nz,de
+
 " vim: expandtab shiftwidth=4

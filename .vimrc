@@ -163,4 +163,6 @@ if filereadable("/usr/bin/par")
     set formatprg=par
 endif
 
+" toggle spell checking with ,s
+nmap <silent> <leader>s :set spell!<CR>
 " vim: expandtab shiftwidth=4

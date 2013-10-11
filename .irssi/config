@@ -13,6 +13,13 @@ servers = (
     use_ssl = "yes";
     autoconnect = "no";
     chatnet = "IRCnet";
+  },
+  {
+    address = "talk.google.com";
+    port = "5223";
+    use_ssl = "yes";
+    autoconnect = "no";
+    chatnet = "XMPPnet";
   }
 );
 
@@ -23,6 +30,9 @@ chatnets = {
     max_msgs = "5";
     max_whois = "4";
     max_query_chans = "5";
+  };
+  XMPPnet = {
+    type = "XMPP";
   };
 };
 

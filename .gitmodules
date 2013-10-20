@@ -1,0 +1,3 @@
+[submodule ".config/awesome/delightful"]
+	path = .config/awesome/delightful
+	url = git://scm.solitudo.net/delightful.git

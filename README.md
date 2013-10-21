@@ -71,3 +71,8 @@ Install the unimpaired plugin:
     cd ~/.vim/bundle
     git clone git://github.com/tpope/vim-unimpaired.git
 
+xpdf
+----
+
+    sudo aptitude search xpdf
+    ln -s $HOME/dotfiles/.xpdfrc $HOME/.xpdfrc

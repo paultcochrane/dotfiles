@@ -52,13 +52,13 @@ vim
     sudo aptitude install vim
     ln -s $HOME/dotfiles/.vimrc $HOME/.vimrc
 
-Install the pathogen plugin:
+Install the [pathogen](https://github.com/tpope/vim-pathogen) plugin:
 
     mkdir -p ~/.vim/autoload ~/.vim/bundle
     curl -Sso ~/.vim/autoload/pathogen.vim \
 	https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
-Install the Command-T plugin:
+Install the [Command-T](https://wincent.com/products/command-t) plugin:
 
     wget http://s3.wincent.com/command-t/releases/command-t-1.5.1.vba
     vim --cmd 'source command-t-1.5.1.vba | q!'
@@ -66,7 +66,7 @@ Install the Command-T plugin:
     ruby extconf.rb
     make
 
-Install the unimpaired plugin:
+Install the [unimpaired](https://github.com/tpope/vim-unimpaired) plugin:
 
     cd ~/.vim/bundle
     git clone git://github.com/tpope/vim-unimpaired.git

@@ -34,17 +34,17 @@ irssi
     sudo aptitude install irssi
     ln -s $HOME/dotfiles/.irssi $HOME/.irssi
 
-screen
-------
-
-    sudo aptitude install screen
-    ln -s $HOME/dotfiles/.screen $HOME/.screen
-
 newsbeuter
 ----------
 
     sudo aptitude install newsbeuter
     ln -s $HOME/dotfiles/.newsbeuter $HOME/.newsbeuter
+
+screen
+------
+
+    sudo aptitude install screen
+    ln -s $HOME/dotfiles/.screen $HOME/.screen
 
 vim
 ---

@@ -45,3 +45,29 @@ newsbeuter
 
     sudo aptitude install newsbeuter
     ln -s $HOME/dotfiles/.newsbeuter $HOME/.newsbeuter
+
+vim
+---
+
+    sudo aptitude install vim
+    ln -s $HOME/dotfiles/.vimrc $HOME/.vimrc
+
+Install the pathogen plugin:
+
+    mkdir -p ~/.vim/autoload ~/.vim/bundle
+    curl -Sso ~/.vim/autoload/pathogen.vim \
+	https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+
+Install the Command-T plugin:
+
+    wget http://s3.wincent.com/command-t/releases/command-t-1.5.1.vba
+    vim --cmd 'source command-t-1.5.1.vba | q!'
+    cd ~/.vim/ruby/command-t
+    ruby extconf.rb
+    make
+
+Install the unimpaired plugin:
+
+    cd ~/.vim/bundle
+    git clone git://github.com/tpope/vim-unimpaired.git
+

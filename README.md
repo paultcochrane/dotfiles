@@ -28,6 +28,12 @@ ghci
     sudo aptitude install ghc-ghci
     ln -s $HOME/dotfiles/.ghci $HOME/.ghci
 
+irssi
+-----
+
+    sudo aptitude install irssi
+    ln -s $HOME/dotfiles/.irssi $HOME/.irssi
+
 newsbeuter
 ----------
 

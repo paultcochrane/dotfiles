@@ -96,16 +96,6 @@ else
 
 endif " has("autocmd")
 
-fun! ShowFuncName()
-    let lnum = line(".")
-    let col = col(".")
-    echohl ModeMsg
-    echo getline(search("^[^ \t#/]\\{2}.*[^:]\s*$", 'bW'))
-    echohl None
-    call search("\\%" . lnum . "l" . "\\%" . col . "c")
-endfun
-map f :call ShowFuncName() <CR>
-
 let s:extfname = expand("%:e")
 if s:extfname ==? "f90"
     let fortran_free_source=1

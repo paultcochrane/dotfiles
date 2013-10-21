@@ -22,6 +22,12 @@ awesome
 
 NOTE: The list of packages here might not be complete.
 
+ghci
+----
+
+    sudo aptitude install ghc-ghci
+    ln -s $HOME/dotfiles/.ghci $HOME/.ghci
+
 newsbeuter
 ----------
 

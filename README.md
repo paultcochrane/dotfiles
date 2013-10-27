@@ -83,6 +83,9 @@ Install the [fugitive](https://github.com/tpope/vim-fugitive) plugin:
     cd ~/.vim/bundle
     git clone git://github.com/tpope/vim-fugitive.git
 
+If the help for the given package can't be found and/or if the commands for
+the given package don't show up, just run `:Helptags`.
+
 xpdf
 ----
 

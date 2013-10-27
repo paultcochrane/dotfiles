@@ -78,6 +78,11 @@ Install the [unimpaired](https://github.com/tpope/vim-unimpaired) plugin:
     cd ~/.vim/bundle
     git clone git://github.com/tpope/vim-unimpaired.git
 
+Install the [fugitive](https://github.com/tpope/vim-fugitive) plugin:
+
+    cd ~/.vim/bundle
+    git clone git://github.com/tpope/vim-fugitive.git
+
 xpdf
 ----
 

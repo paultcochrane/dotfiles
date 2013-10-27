@@ -34,6 +34,12 @@ irssi
     sudo aptitude install irssi
     ln -s $HOME/dotfiles/.irssi $HOME/.irssi
 
+mutt
+----
+
+    sudo aptitude install mutt
+    ln -s $HOME/dotfiles/.muttrc_colours $HOME/.muttrc_colours
+
 newsbeuter
 ----------
 

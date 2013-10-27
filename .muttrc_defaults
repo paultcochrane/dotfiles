@@ -1,0 +1,32 @@
+# .muttrc standard settings for all accounts
+
+set record="=Sent"
+set save_name=yes
+set postponed="=Drafts"
+set index_format="%4C %Z %{%b %d %H:%M} %-15.15L (%?l?%4l&%4c?) %s"
+
+# make sure that the From: address is used
+set use_from=yes
+
+# pretty print through paps
+set print_command="paps | lpr"
+
+set mime_forward=yes
+set mime_forward_rest=yes
+
+# activate TLS if available on the server
+set ssl_starttls=yes
+# always use SSL when connecting to a server
+set ssl_force_tls=yes
+# Don't wait to enter mailbox manually 
+unset imap_passive        
+# Automatically poll subscribed mailboxes for new mail (new in 1.5.11)
+set imap_check_subscribed
+# Reduce polling frequency to a sane level
+set mail_check=60
+# And poll the current mailbox more often (not needed with IDLE in post 1.5.11)
+set timeout=10
+# keep a cache of headers for faster loading (1.5.9+?)
+set header_cache=~/.hcache
+# Display download progress every 5K
+set net_inc=5

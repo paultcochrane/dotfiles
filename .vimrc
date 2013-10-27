@@ -35,6 +35,8 @@ map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
+execute pathogen#infect()
+
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")

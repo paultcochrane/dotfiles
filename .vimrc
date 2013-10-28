@@ -165,4 +165,8 @@ set spelllang=en_nz,de
 " from Practical Vim; Drew Neil
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
+" extend dot command to visual mode
+" from Drew Neil
+xnoremap . :norm.<CR>
+
 " vim: expandtab shiftwidth=4

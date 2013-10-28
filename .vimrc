@@ -161,4 +161,8 @@ nmap <silent> <leader>s :set spell!<CR>
 " use New Zealand English and German by default
 set spelllang=en_nz,de
 
+" expand %% to path of active buffer (i.e. %:h<Tab>)
+" from Practical Vim; Drew Neil
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
 " vim: expandtab shiftwidth=4

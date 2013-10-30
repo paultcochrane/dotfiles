@@ -12,7 +12,7 @@ awesome
     sudo aptitude install sensors-applet
     sudo aptitude install lua-expat
     sudo aptitude install liblua5.1-socket2
-    ln -s $HOME/dotfiles/.config $HOME/.config
+    ln -s $HOME/dotfiles/awesome $HOME/.config/awesome
     cd $HOME/dotfiles
     git submodule update
     git submodule init

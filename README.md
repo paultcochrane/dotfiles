@@ -7,15 +7,22 @@ instructions for the respective software package.
 awesome
 -------
 
+Install the necessary packages
     sudo aptitude install awesome awesome-extras
     sudo aptitude install gnome-icon-theme
     sudo aptitude install sensors-applet
     sudo aptitude install lua-expat
     sudo aptitude install liblua5.1-socket2
+
+Link the HOME directory appropriately
     ln -s $HOME/dotfiles/awesome $HOME/.config/awesome
     cd $HOME/dotfiles
+
+Set up the delightful submodule/subrepo
     git submodule update
     git submodule init
+
+Set up delightful's submodules
     cd $HOME/dotfiles/.config/awesome/delightful_repo
     git submodule update
     git submodule init

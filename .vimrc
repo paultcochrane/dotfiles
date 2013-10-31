@@ -120,8 +120,7 @@ function! RunMake(cleanoption)
 endfunction
 
 " running tests
-" mnemonic: *t*est the code
-map <leader>t :call RunTests()<cr>
+map <leader>a :call RunTests()<cr>
 
 function! RunTests()
     " run Perl tests

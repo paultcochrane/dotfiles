@@ -35,6 +35,11 @@ ghci
     sudo aptitude install ghc-ghci
     ln -s $HOME/dotfiles/.ghci $HOME/.ghci
 
+inputrc
+-------
+
+    ln -s $HOME/dotfiles/.inputrc $HOME/.inputrc
+
 irssi
 -----
 

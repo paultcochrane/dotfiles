@@ -62,13 +62,13 @@ require('delightful.widgets.weather')
 -- Which widgets to install?
 -- This is the order the widgets appear in the wibox.
 install_delightful = {
-    delightful.widgets.datetime,
     delightful.widgets.network,
     delightful.widgets.cpu,
     delightful.widgets.memory,
     delightful.widgets.weather,
     delightful.widgets.battery,
-    delightful.widgets.pulseaudio
+    delightful.widgets.pulseaudio,
+    delightful.widgets.datetime,
 }
 
 -- Widget configuration

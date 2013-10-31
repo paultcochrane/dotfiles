@@ -112,22 +112,6 @@ if install_delightful then
     end
 end
 
--- Prepare the container that is used when constructing the wibox
-local delightful_container = { widgets = {}, icons = {} }
-if install_delightful then
-    for _, widget in pairs(awful.util.table.reverse(install_delightful)) do
-        local config = delightful_config and delightful_config[widget]
-        local widgets, icons = widget:load(config)
-        if widgets then
-            if not icons then
-                icons = {}
-            end
-            table.insert(delightful_container.widgets, awful.util.table.reverse(widgets))
-            table.insert(delightful_container.icons,   awful.util.table.reverse(icons))
-        end
-    end
-end
-
 -- Table of layouts to cover with awful.layout.inc, order matters.
 layouts =
 {

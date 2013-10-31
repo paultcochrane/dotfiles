@@ -52,23 +52,23 @@ editor_cmd = terminal .. " -e " .. editor
 modkey = "Mod4"
 
 -- Delightful widgets
-require('delightful.widgets.weather')
-require('delightful.widgets.network')
-require('delightful.widgets.cpu')
-require('delightful.widgets.memory')
-require('delightful.widgets.pulseaudio')
-require('delightful.widgets.datetime')
 require('delightful.widgets.battery')
+require('delightful.widgets.cpu')
+require('delightful.widgets.datetime')
+require('delightful.widgets.memory')
+require('delightful.widgets.network')
+require('delightful.widgets.pulseaudio')
+require('delightful.widgets.weather')
 -- Which widgets to install?
 -- This is the order the widgets appear in the wibox.
 install_delightful = {
-    --delightful.widgets.weather,
+    delightful.widgets.datetime,
     delightful.widgets.network,
     delightful.widgets.cpu,
     delightful.widgets.memory,
-    delightful.widgets.pulseaudio,
+    --delightful.widgets.weather,
     delightful.widgets.battery,
-    delightful.widgets.datetime,
+    delightful.widgets.pulseaudio
 }
 
 -- Widget configuration
@@ -85,15 +85,14 @@ delightful_config = {
             --command = 'gnome-www-browser http://www.wetter.de/wettervorhersage/49-1558-67/wetter-hannover.html',
         --},
     --},
-    [delightful.widgets.pulseaudio] = {
-	--mixer_command = 'gnome-sound-applet',
-        mixer_command = 'alsamixer',
-    },
     [delightful.widgets.network] = {
 	excluded_devices = { '^lo$', '^tun%d*$' },
     },
     [delightful.widgets.battery] = {
 	battery = "BAT0",
+    },
+    [delightful.widgets.pulseaudio] = {
+	mixer_command = 'gnome-sound-applet',
     },
 }
 

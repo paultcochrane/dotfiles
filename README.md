@@ -19,13 +19,13 @@ Link the HOME directory appropriately
     cd $HOME/dotfiles
 
 Set up the delightful submodule/subrepo
-    git submodule update
     git submodule init
+    git submodule update
 
 Set up delightful's submodules
     cd $HOME/dotfiles/.config/awesome/delightful_repo
-    git submodule update
     git submodule init
+    git submodule update
 
 NOTE: The list of packages here might not be complete.
 

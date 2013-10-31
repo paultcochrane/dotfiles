@@ -66,7 +66,7 @@ install_delightful = {
     delightful.widgets.network,
     delightful.widgets.cpu,
     delightful.widgets.memory,
-    --delightful.widgets.weather,
+    delightful.widgets.weather,
     delightful.widgets.battery,
     delightful.widgets.pulseaudio
 }
@@ -79,12 +79,12 @@ delightful_config = {
     [delightful.widgets.memory] = {
         command = 'gnome-system-monitor',
     },
-    --[delightful.widgets.weather] = {
-        --{
-            --city = 'Hannover',
-            --command = 'gnome-www-browser http://www.wetter.de/wettervorhersage/49-1558-67/wetter-hannover.html',
-        --},
-    --},
+    [delightful.widgets.weather] = {
+        {
+            city = 'Hannover',
+            command = 'gnome-www-browser http://www.wetter.de/wettervorhersage/49-1558-67/wetter-hannover.html',
+        },
+    },
     [delightful.widgets.network] = {
 	excluded_devices = { '^lo$', '^tun%d*$' },
     },
@@ -258,7 +258,6 @@ for s = 1, screen.count() do
     }
     mywibox[s].widgets = awful.util.table.join(widgets_front, widgets_middle, widgets_end)
 end
-
 -- }}}
 
 -- {{{ Mouse bindings

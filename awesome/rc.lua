@@ -462,6 +462,6 @@ function run_once(cmd)
     awful.util.spawn_with_shell("pgrep -u $USER -x " .. findme .. " > /dev/null || (" .. cmd .. ")")
 end
 
--- run_once("xmodmap /home/cochrane/.xmodmap-pc205c")
+run_once("xmodmap ~/.xmodmap")
 run_once("xscreensaver -nosplash &")
 

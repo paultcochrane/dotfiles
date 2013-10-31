@@ -58,6 +58,7 @@ require('delightful.widgets.cpu')
 require('delightful.widgets.memory')
 require('delightful.widgets.pulseaudio')
 require('delightful.widgets.datetime')
+require('delightful.widgets.battery')
 -- Which widgets to install?
 -- This is the order the widgets appear in the wibox.
 install_delightful = {
@@ -66,6 +67,7 @@ install_delightful = {
     delightful.widgets.cpu,
     delightful.widgets.memory,
     delightful.widgets.pulseaudio,
+    delightful.widgets.battery,
     delightful.widgets.datetime,
 }
 
@@ -89,6 +91,9 @@ delightful_config = {
     },
     [delightful.widgets.network] = {
 	excluded_devices = { '^lo$', '^tun%d*$' },
+    },
+    [delightful.widgets.battery] = {
+	battery = "BAT0",
     },
 }
 

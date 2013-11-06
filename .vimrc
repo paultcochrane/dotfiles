@@ -91,6 +91,8 @@ if has("autocmd")
     autocmd BufRead,BufNewFile *.runfile set ft=dosini
     " recognise .cls as being TeX files
     autocmd BufRead,BufNewFile *.cls set ft=tex
+    " recognise .md as being MarkDown format
+    autocmd BufRead,BufNewFile *.md set ft=markdown
 
 else
 

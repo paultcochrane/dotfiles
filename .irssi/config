@@ -21,6 +21,13 @@ servers = (
     autoconnect = "no";
     chatnet = "XMPPnet";
   }
+  {
+    address = "jabber.ccc.de";
+    port = "5222";
+    use_ssl = "yes";
+    autoconnect = "no";
+    chatnet = "XMPPnet";
+  }
 );
 
 chatnets = {

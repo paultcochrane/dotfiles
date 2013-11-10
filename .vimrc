@@ -171,4 +171,21 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 " from Drew Neil
 xnoremap . :norm.<CR>
 
+" multipurpose tab key
+" indent if we're at the beginning of a line. else, do completion.
+" adapted from Gary Bernhardt's .vimrc
+function! InsertTabWrapper()
+    let col = col('.') - 1
+    " original implementation from Gary Bernhardt
+    " for some reason it adds tabs instead of showing the completion list
+    "if !col || getline('.')[col - 1] !~ '\k'
+    if !col
+        return "\<tab>"
+    else
+        return "\<c-p>"
+    endif
+endfunction
+inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+inoremap <s-tab> <c-n>
+
 " vim: expandtab shiftwidth=4

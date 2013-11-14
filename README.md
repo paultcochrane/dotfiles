@@ -8,11 +8,11 @@ awesome
 -------
 
 Install the necessary packages
-    sudo aptitude install awesome awesome-extras
-    sudo aptitude install gnome-icon-theme
-    sudo aptitude install sensors-applet
-    sudo aptitude install lua-expat
-    sudo aptitude install liblua5.1-socket2
+    sudo aptitude install awesome awesome-extra\
+	gnome-icon-theme\
+	sensors-applet\
+	lua-expat\
+	liblua5.1-socket2
 
 Link the HOME directory appropriately
     ln -s $HOME/dotfiles/awesome $HOME/.config/awesome

@@ -120,6 +120,11 @@ Install the [fugitive](https://github.com/tpope/vim-fugitive) plugin:
 If the help for the given package can't be found and/or if the commands for
 the given package don't show up, just run `:Helptags`.
 
+xmodmap
+-------
+
+    ln -s $HOME/dotfiles/.xmodmap $HOME/.xmodmap
+
 xpdf
 ----
 

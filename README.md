@@ -33,6 +33,11 @@ Make sure that libgweather's locations file is in the expected format for
 
 NOTE: The list of packages here might not be complete.
 
+bash-completion
+---------------
+
+    sudo aptitude install bash-completion
+
 devtodo
 -------
 

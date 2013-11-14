@@ -27,6 +27,10 @@ Set up delightful's submodules
     git submodule init
     git submodule update
 
+Make sure that libgweather's locations file is in the expected format for
+`aweseome`.
+    sudo gunzip /usr/share/libgweather/Locations.xml.gz
+
 NOTE: The list of packages here might not be complete.
 
 ghci

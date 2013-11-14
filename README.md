@@ -33,6 +33,11 @@ Make sure that libgweather's locations file is in the expected format for
 
 NOTE: The list of packages here might not be complete.
 
+bash
+----
+
+    ln -s $HOME/dotfiles/.bashrc $HOME/.bashrc
+
 bash-completion
 ---------------
 

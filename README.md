@@ -122,5 +122,5 @@ the given package don't show up, just run `:Helptags`.
 xpdf
 ----
 
-    sudo aptitude search xpdf
+    sudo aptitude install xpdf
     ln -s $HOME/dotfiles/.xpdfrc $HOME/.xpdfrc

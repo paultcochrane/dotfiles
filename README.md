@@ -23,7 +23,7 @@ Set up the delightful submodule/subrepo
     git submodule update
 
 Set up delightful's submodules
-    cd $HOME/dotfiles/.config/awesome/delightful_repo
+    cd $HOME/dotfiles/awesome/delightful_repo
     git submodule init
     git submodule update
 

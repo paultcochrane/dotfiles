@@ -100,6 +100,7 @@ Install the [pathogen](https://github.com/tpope/vim-pathogen) plugin:
 
 Install the [Command-T](https://wincent.com/products/command-t) plugin:
 
+    sudo aptitude install ruby-dev make
     wget http://s3.wincent.com/command-t/releases/command-t-1.5.1.vba
     vim --cmd 'source command-t-1.5.1.vba | q!'
     cd ~/.vim/ruby/command-t

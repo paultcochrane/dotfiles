@@ -67,7 +67,7 @@ screen
 ------
 
     sudo aptitude install screen
-    ln -s $HOME/dotfiles/.screen $HOME/.screen
+    ln -s $HOME/dotfiles/.screenrc $HOME/.screenrc
 
 vim
 ---

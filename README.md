@@ -33,6 +33,13 @@ Make sure that libgweather's locations file is in the expected format for
 
 NOTE: The list of packages here might not be complete.
 
+devtodo
+-------
+
+The configuration for `devtodo` is in `.bashrc`.
+
+    sudo aptitude install devtodo
+
 ghci
 ----
 

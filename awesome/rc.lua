@@ -58,14 +58,12 @@ require('delightful.widgets.datetime')
 require('delightful.widgets.memory')
 require('delightful.widgets.network')
 require('delightful.widgets.pulseaudio')
-require('delightful.widgets.weather')
 -- Which widgets to install?
 -- This is the order the widgets appear in the wibox.
 install_delightful = {
     delightful.widgets.network,
     delightful.widgets.cpu,
     delightful.widgets.memory,
-    delightful.widgets.weather,
     delightful.widgets.battery,
     delightful.widgets.pulseaudio,
     delightful.widgets.datetime,
@@ -78,12 +76,6 @@ delightful_config = {
     },
     [delightful.widgets.memory] = {
         command = 'gnome-system-monitor',
-    },
-    [delightful.widgets.weather] = {
-        {
-            city = 'Hannover',
-            command = 'gnome-www-browser http://www.wetter.de/wettervorhersage/49-1558-67/wetter-hannover.html',
-        },
     },
     [delightful.widgets.network] = {
 	excluded_devices = { '^lo$', '^tun%d*$' },

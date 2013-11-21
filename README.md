@@ -89,8 +89,13 @@ screen
 vim
 ---
 
-    sudo aptitude install vim
+Install `vim` and link the dotfile:
+
+    sudo aptitude install vim vim-gtk
     ln -s $HOME/dotfiles/.vimrc $HOME/.vimrc
+
+`vim-gtk` is necessary so that Ruby support is available in `vim` so that
+the `Command-T` plugin works.
 
 Install the [pathogen](https://github.com/tpope/vim-pathogen) plugin:
 

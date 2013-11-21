@@ -134,7 +134,7 @@ function! RunTests()
         endif
     " run Python tests
     elseif isdirectory('tests')
-        exec ":!python -m unittest discover -v tests"
+        exec ":!nosetests -v"
     endif
 endfunction
 

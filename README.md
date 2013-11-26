@@ -135,3 +135,8 @@ xpdf
 
     sudo aptitude install xpdf
     ln -s $HOME/dotfiles/.xpdfrc $HOME/.xpdfrc
+
+xsession
+--------
+
+    ln -s $HOME/dotfiles/.xsession $HOME/.xsession

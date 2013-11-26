@@ -176,10 +176,9 @@ xnoremap . :norm.<CR>
 " adapted from Gary Bernhardt's .vimrc
 function! InsertTabWrapper()
     let col = col('.') - 1
-    " original implementation from Gary Bernhardt
-    " for some reason it adds tabs instead of showing the completion list
-    "if !col || getline('.')[col - 1] !~ '\k'
-    if !col
+    " if we're at the start of a line or there is only whitespace up until
+    " the column just before the cursor position, add a tab
+    if !col || getline('.')[0:col-1] !~ '\w'
         return "\<tab>"
     else
         return "\<c-p>"

@@ -134,7 +134,7 @@ function! RunTests()
         endif
     " run Python tests
     elseif isdirectory('tests')
-        exec ":!nosetests -v"
+        exec ":!nosetests"
     endif
 endfunction
 

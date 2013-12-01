@@ -8,6 +8,7 @@ awesome
 -------
 
 Install the necessary packages
+
     sudo aptitude install awesome awesome-extra\
 	gnome-icon-theme\
 	sensors-applet\
@@ -15,20 +16,24 @@ Install the necessary packages
 	liblua5.1-socket2
 
 Link the HOME directory appropriately
+
     ln -s $HOME/dotfiles/awesome $HOME/.config/awesome
     cd $HOME/dotfiles
 
 Set up the delightful submodule/subrepo
+
     git submodule init
     git submodule update
 
 Set up delightful's submodules
+
     cd $HOME/dotfiles/awesome/delightful_repo
     git submodule init
     git submodule update
 
 Make sure that libgweather's locations file is in the expected format for
 `aweseome`.
+
     sudo gunzip /usr/share/libgweather/Locations.xml.gz
 
 NOTE: The list of packages here might not be complete.

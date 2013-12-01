@@ -56,6 +56,13 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+# enable git completion
+GIT_BASH_COMPLETION="/etc/bash_completion.d/git"
+if [ -e "$GIT_BASH_COMPLETION" ]
+then
+    source "$GIT_BASH_COMPLETION"
+fi
+
 export GIT_PS1_SHOWDIRTYSTATE="true"
 export GIT_PS1_SHOWSTASHSTATE="true"
 export GIT_PS1_SHOWUNTRACKEDFILES="true"

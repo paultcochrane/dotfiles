@@ -138,6 +138,15 @@ function! RunTests()
     endif
 endfunction
 
+" run tests just for this file
+map <leader>t :call RunTestsForThisFile()<cr>
+
+function! RunTestsForThisFile()
+    if isdirectory('tests')
+        exec ":!nosetests --rednose %"
+    endif
+endfunction
+
 " remove trailing whitespace (copied from the example on www.vimcasts.org)
 function! Preserve(command)
     " Preparation: save last search, and cursor position.

@@ -144,6 +144,15 @@ map <leader>T :call RunTestsForThisFile()<cr>
 function! RunTestsForThisFile()
     if isdirectory('tests')
         exec ":!nosetests --rednose %"
+endfunction
+
+" running acceptance tests
+map <leader>t :call RunAcceptanceTests()<cr>
+
+function! RunAcceptanceTests()
+    " run Python 'behave' tests
+    if isdirectory('features/steps')
+        exec ":!behave"
     endif
 endfunction
 

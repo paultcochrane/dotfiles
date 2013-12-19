@@ -146,6 +146,7 @@ map <leader>T :call RunTestsForThisFile()<cr>
 function! RunTestsForThisFile()
     if isdirectory('tests')
         exec ":!nosetests --rednose %"
+    endif
 endfunction
 
 " running acceptance tests

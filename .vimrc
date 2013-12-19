@@ -139,7 +139,7 @@ function! RunTests()
 endfunction
 
 " run tests just for this file
-map <leader>t :call RunTestsForThisFile()<cr>
+map <leader>T :call RunTestsForThisFile()<cr>
 
 function! RunTestsForThisFile()
     if isdirectory('tests')

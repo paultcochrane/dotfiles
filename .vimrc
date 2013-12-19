@@ -155,6 +155,8 @@ function! RunAcceptanceTests()
     " run Python 'behave' tests
     if isdirectory('features/steps')
         exec ":!behave"
+    else
+        echo "features/steps directory doesn't exist"
     endif
 endfunction
 

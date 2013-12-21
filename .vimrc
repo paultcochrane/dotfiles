@@ -123,8 +123,8 @@ function! RunMake(cleanoption)
     endif
 endfunction
 
-" running tests
-map <leader>a :call RunTests()<cr>
+" run the unit"t"ests
+map <leader>t :call RunTests()<cr>
 
 function! RunTests()
     " run Perl tests
@@ -140,7 +140,7 @@ function! RunTests()
     endif
 endfunction
 
-" run tests just for this file
+" run unit tests just for "T"his file
 map <leader>T :call RunTestsForThisFile()<cr>
 
 function! RunTestsForThisFile()
@@ -148,8 +148,8 @@ function! RunTestsForThisFile()
         exec ":!nosetests --rednose %"
 endfunction
 
-" running acceptance tests
-map <leader>t :call RunAcceptanceTests()<cr>
+" run the "a"cceptance tests
+map <leader>a :call RunAcceptanceTests()<cr>
 
 function! RunAcceptanceTests()
     " run Python 'behave' tests

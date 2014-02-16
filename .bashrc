@@ -166,3 +166,4 @@ popd ()
 # Run todo initially upon login
 devtodo ${TODO_OPTIONS}
 
+source ~/perl5/perlbrew/etc/bashrc

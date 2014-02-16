@@ -137,6 +137,8 @@ function! RunTests()
     " run Python tests
     elseif isdirectory('tests')
         exec ":!nosetests --rednose"
+    elseif isdirectory('test')
+        exec ":!ruby -Ilib test/test*.rb"
     endif
 endfunction
 

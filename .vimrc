@@ -145,7 +145,7 @@ function! RunTests()
     endif
 endfunction
 
-" run unit tests just for "T"his file
+" run unit tests just for 'T'his file
 map <leader>T :call RunTestsForThisFile()<cr>
 
 function! RunTestsForThisFile()
@@ -154,7 +154,7 @@ function! RunTestsForThisFile()
     endif
 endfunction
 
-" run the "a"cceptance tests
+" run the 'a'cceptance tests
 map <leader>a :call RunAcceptanceTests()<cr>
 
 function! RunAcceptanceTests()

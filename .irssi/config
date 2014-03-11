@@ -9,7 +9,7 @@ servers = (
   },
   {
     address = "bnc.dev5media.de";
-    port = "2133";
+    port = "6697";
     use_ssl = "yes";
     autoconnect = "no";
     chatnet = "IRCnet";

@@ -215,4 +215,6 @@ endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <s-tab> <c-n>
 
+let g:syntastic_python_checkers = ['frosted']
+
 " vim: expandtab shiftwidth=4

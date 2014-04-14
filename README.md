@@ -130,6 +130,11 @@ Install the [fugitive](https://github.com/tpope/vim-fugitive) plugin:
 If the help for the given package can't be found and/or if the commands for
 the given package don't show up, just run `:Helptags`.
 
+Install the [syntastic](https://github.com/scrooloose/syntastic) plugin:
+
+    cd ~/.vim/bundle
+    git clone https://github.com/scrooloose/syntastic.git
+
 xmodmap
 -------
 

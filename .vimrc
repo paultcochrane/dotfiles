@@ -149,8 +149,14 @@ endfunction
 map <leader>T :call RunTestsForThisFile()<cr>
 
 function! RunTestsForThisFile()
-    if isdirectory('tests')
+    let filename = expand("%:t")
+    if match(filename, 'test_.*.py$') != -1
         exec ":!nosetests --rednose %"
+    elseif match(filename, '.*.py$') != -1
+        :echo filename
+        exec ":!nosetests --rednose tests/test_" . filename
+    else
+        :echo filename
     endif
 endfunction
 

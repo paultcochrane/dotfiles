@@ -166,7 +166,7 @@ map <leader>a :call RunAcceptanceTests()<cr>
 function! RunAcceptanceTests()
     " run Python 'behave' tests
     if isdirectory('features/steps')
-        exec ":!behave"
+        exec ":!behave --tags ~@wip"
     else
         echo "features/steps directory doesn't exist"
     endif

@@ -130,6 +130,9 @@ endfunction
 map <leader>t :call RunTests()<cr>
 
 function! RunTests()
+    let js_files = split(globpath(getcwd(), 'test/test*.js'), '\n')
+    let rb_files = split(globpath(getcwd(), 'test/test*.rb'), '\n')
+
     " run Perl tests
     if isdirectory('t')
         if filereadable("t/harness")
@@ -140,8 +143,12 @@ function! RunTests()
     " run Python tests
     elseif isdirectory('tests')
         exec ":!nosetests --rednose"
-    elseif isdirectory('test')
+    " run Ruby tests
+    elseif !empty(rb_files)
         exec ":!ruby -Ilib test/test*.rb"
+    " run JavaScript tests
+    elseif !empty(js_files)
+        exec ":!./node_modules/mocha/bin/mocha --reporter list"
     endif
 endfunction
 

@@ -85,7 +85,7 @@ if has("autocmd")
     autocmd BufRead,BufNewFile *.part set ft=html
 
     " recognise .t as being perl files
-    autocmd BufRead,BufNewFile *.t set ft=perl
+    autocmd BufRead,BufNewFile *.t set ft=perl expandtab shiftwidth=4 softtabstop=4
     " recognise .pmc and .ops as being C files
     autocmd BufRead,BufNewFile *.pmc set ft=c
     autocmd BufRead,BufNewFile *.ops set ft=c

@@ -205,6 +205,9 @@ nmap <silent> <leader>s :set spell!<CR>
 " http://www.reddit.com/r/vim/comments/2772n9/nonprogrammers_your_best_tips_tricks/)
 nnoremap <leader>xp dawwP
 
+" indent a paragraph
+nnoremap <leader>q gqip
+
 " use New Zealand English and German by default
 set spelllang=en_nz,de
 

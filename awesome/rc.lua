@@ -84,7 +84,7 @@ delightful_config = {
 	battery = "BAT0",
     },
     [delightful.widgets.pulseaudio] = {
-	mixer_command = 'gnome-sound-applet',
+	mixer_command = 'pa-applet',
     },
 }
 

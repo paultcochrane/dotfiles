@@ -201,6 +201,10 @@ endif
 " toggle spell checking with ,s
 nmap <silent> <leader>s :set spell!<CR>
 
+" swap two words (from
+" http://www.reddit.com/r/vim/comments/2772n9/nonprogrammers_your_best_tips_tricks/)
+nnoremap <leader>xp dawwP
+
 " use New Zealand English and German by default
 set spelllang=en_nz,de
 

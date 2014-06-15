@@ -81,6 +81,9 @@ if has("autocmd")
     " html files shouldn't use tabs; they should use a 2-space indent
     autocmd BufRead,BufNewFile *.html set expandtab shiftwidth=2 softtabstop=2
 
+    " ruby files shouldn't use tabs; they use a 2-space indent
+    autocmd BufRead,BufNewFile *.rb set expandtab shiftwidth=2 softtabstop=2
+
     " This makes sure that .part files are treated as if they were html
     autocmd BufRead,BufNewFile *.part set ft=html
 

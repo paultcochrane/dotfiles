@@ -239,6 +239,7 @@ endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <s-tab> <c-n>
 
+" syntastic settings
 setlocal omnifunc=necoghc#omnifunc
 let g:syntastic_python_checkers = ['frosted']
 

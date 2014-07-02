@@ -66,6 +66,12 @@ ghci
     sudo aptitude install ghc-ghci
     ln -s $HOME/dotfiles/.ghci $HOME/.ghci
 
+git
+---
+    
+    sudo aptitude install git
+    ln -s $HOME/dotfiles/.gitconfig $HOME/.gitconfig
+
 inputrc
 -------
 

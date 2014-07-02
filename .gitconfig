@@ -1,0 +1,12 @@
+[user]
+	name = Paul Cochrane
+	email = paul@liekut.de
+[alias]
+	st = status
+	di = diff
+	ci = commit -v
+	hist = log --graph --all --color=always --decorate --oneline
+[color]
+	ui = true
+[push]
+	default = current

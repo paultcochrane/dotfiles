@@ -176,3 +176,4 @@ popd ()
 devtodo ${TODO_OPTIONS}
 
 source ~/perl5/perlbrew/etc/bashrc
+source /opt/intel/bin/compilervars.sh intel64

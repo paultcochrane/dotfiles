@@ -6,6 +6,7 @@
 	di = diff
 	ci = commit -v
 	hist = log --graph --all --color=always --decorate --oneline
+	co = checkout
 [color]
 	ui = true
 [push]

@@ -1,6 +1,8 @@
 [user]
 	name = Paul Cochrane
 	email = paul@liekut.de
+[core]
+	excludesfile = ~/.gitignore_global
 [alias]
 	st = status
 	di = diff

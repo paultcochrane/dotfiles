@@ -142,7 +142,7 @@ function! RunTests()
         if filereadable("t/harness")
             exec ":!perl t/harness"
         else
-            exec ":!prove t/*.t"
+            exec ":!prove -lr t"
         endif
     " run Python tests
     elseif isdirectory('tests')

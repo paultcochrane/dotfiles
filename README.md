@@ -71,6 +71,7 @@ git
     
     sudo aptitude install git
     ln -s $HOME/dotfiles/.gitconfig $HOME/.gitconfig
+    ln -s $HOME/dotfiles/.gitignore_global $HOME/.gitignore_global
 
 inputrc
 -------

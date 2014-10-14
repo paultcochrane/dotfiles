@@ -178,4 +178,4 @@ devtodo ${TODO_OPTIONS}
 source ~/perl5/perlbrew/etc/bashrc
 source /opt/intel/bin/compilervars.sh intel64
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin:$HOME/Projekte/OSSProjekte/rakudo/install/bin"

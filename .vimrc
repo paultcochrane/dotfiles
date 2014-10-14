@@ -82,6 +82,8 @@ if has("autocmd")
     autocmd BufRead,BufNewFile *.html set expandtab shiftwidth=2 softtabstop=2
     " tmpl files are also html files
     autocmd BufRead,BufNewFile *.tmpl set expandtab shiftwidth=2 softtabstop=2 ft=html
+    " tt files are also html files
+    autocmd BufRead,BufNewFile *.tt set expandtab shiftwidth=2 softtabstop=2 ft=html
 
     " ruby files shouldn't use tabs; they use a 2-space indent
     autocmd BufRead,BufNewFile *.rb set expandtab shiftwidth=2 softtabstop=2

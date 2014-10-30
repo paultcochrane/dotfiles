@@ -85,6 +85,9 @@ if has("autocmd")
     " tt files are also html files
     autocmd BufRead,BufNewFile *.tt set expandtab shiftwidth=2 softtabstop=2 ft=html
 
+    " Haskell files shouldn't use tabs
+    autocmd BufRead,BufNewFile *.hs set expandtab shiftwidth=4 softtabstop=4 ft=haskell
+
     " ruby files shouldn't use tabs; they use a 2-space indent
     autocmd BufRead,BufNewFile *.rb set expandtab shiftwidth=2 softtabstop=2
     autocmd BufRead,BufNewFile *.gemspec set expandtab shiftwidth=2 softtabstop=2

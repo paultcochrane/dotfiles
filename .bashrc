@@ -175,7 +175,14 @@ popd ()
 # Run todo initially upon login
 devtodo ${TODO_OPTIONS}
 
-source ~/perl5/perlbrew/etc/bashrc
-source /opt/intel/bin/compilervars.sh intel64
+if [ -e $HOME/perl5/perlbrew/etc/bashrc ]
+then
+    source $HOME/perl5/perlbrew/etc/bashrc
+fi
+
+if [ -e /opt/intel/bin/compilervars.sh ]
+then
+    source /opt/intel/bin/compilervars.sh intel64
+fi
 
 export PATH="$PATH:$HOME/.rvm/bin:$HOME/Projekte/OSSProjekte/rakudo/install/bin"

@@ -20,7 +20,7 @@ servers = (
     use_ssl = "yes";
     autoconnect = "no";
     chatnet = "XMPPnet";
-  }
+  },
   {
     address = "jabber.ccc.de";
     port = "5222";
@@ -38,9 +38,7 @@ chatnets = {
     max_whois = "4";
     max_query_chans = "5";
   };
-  XMPPnet = {
-    type = "XMPP";
-  };
+  XMPPnet = { type = "XMPP"; };
 };
 
 channels = (
@@ -223,4 +221,42 @@ settings = {
     beep_msg_level = "MSGS NOTICES DCC DCCMSGS HILIGHT";
     bell_beeps = "yes";
   };
+};
+windows = {
+  1 = { immortal = "yes"; name = "(status)"; level = "ALL"; };
+  2 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#dancer";
+        tag = "IRCnet";
+      }
+    );
+  };
+  3 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#pr-challenge";
+        tag = "IRCnet";
+      }
+    );
+  };
+  4 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#hannover.pm";
+        tag = "IRCnet";
+      }
+    );
+    sticky = "yes";
+  };
+};
+mainwindows = {
+  3 = { first_line = "33"; lines = "31"; };
+  4 = { first_line = "1"; lines = "32"; };
 };

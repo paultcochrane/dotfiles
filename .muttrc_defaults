@@ -18,8 +18,8 @@ set mime_forward_rest=yes
 set ssl_starttls=yes
 # always use SSL when connecting to a server
 set ssl_force_tls=yes
-# Don't wait to enter mailbox manually 
-unset imap_passive        
+# Don't wait to enter mailbox manually
+unset imap_passive
 # Automatically poll subscribed mailboxes for new mail (new in 1.5.11)
 set imap_check_subscribed
 # Reduce polling frequency to a sane level

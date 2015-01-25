@@ -5,7 +5,7 @@ servers = (
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "no";
-    chatnet = "IRCnet";
+    chatnet = "irc_perl_org";
   },
   {
     address = "irc.freenode.net";
@@ -20,7 +20,7 @@ servers = (
     port = "6697";
     use_ssl = "yes";
     autoconnect = "no";
-    chatnet = "IRCnet";
+    chatnet = "dev5media";
   },
   {
     address = "talk.google.com";

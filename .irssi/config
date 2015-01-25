@@ -8,6 +8,14 @@ servers = (
     chatnet = "IRCnet";
   },
   {
+    address = "irc.freenode.net";
+    port = "6667";
+    use_ssl = "no";
+    ssl_verify = "no";
+    autoconnect = "no";
+    chatnet = "Freenode";
+  },
+  {
     address = "bnc.dev5media.de";
     port = "6697";
     use_ssl = "yes";
@@ -38,6 +46,10 @@ chatnets = {
     max_whois = "4";
     max_query_chans = "5";
   };
+  Freenode = {
+    type = "IRC";
+    nick = "[ptc]";
+  }
   XMPPnet = { type = "XMPP"; };
 };
 

@@ -46,14 +46,10 @@ chatnets = {
     max_whois = "4";
     max_query_chans = "5";
   };
-  dev5media = {
-    type = "IRC";
-  };
-  Freenode = {
-    type = "IRC";
-    nick = "[ptc]";
-  };
+  dev5media = { type = "IRC"; };
+  Freenode = { type = "IRC"; nick = "[ptc]"; };
   XMPPnet = { type = "XMPP"; };
+  irc_perl_org = { type = "IRC"; };
 };
 
 channels = (
@@ -276,3 +272,4 @@ mainwindows = {
   3 = { first_line = "33"; lines = "31"; };
   4 = { first_line = "1"; lines = "32"; };
 };
+logs = { };

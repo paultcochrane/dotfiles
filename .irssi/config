@@ -25,6 +25,15 @@ servers = (
     nick = "ptc";
   },
   {
+    address = "bnc.dev5media.de";
+    port = "6697";
+    use_ssl = "yes";
+    autoconnect = "no";
+    chatnet = "dev5media_perl6";
+    user_name = "ptc_irc_freenode_net";
+    nick = "[ptc]";
+  },
+  {
     address = "talk.google.com";
     port = "5223";
     use_ssl = "yes";

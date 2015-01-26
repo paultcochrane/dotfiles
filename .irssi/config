@@ -20,7 +20,9 @@ servers = (
     port = "6697";
     use_ssl = "yes";
     autoconnect = "no";
-    chatnet = "dev5media";
+    chatnet = "dev5media_perl5";
+    user_name = "ptc_irc_perl_org";
+    nick = "ptc";
   },
   {
     address = "talk.google.com";

@@ -258,4 +258,6 @@ nmap <F8> :TagbarToggle<CR>
 " map indent the entire file with <leader>I
 nnoremap <leader>I gg<C-V>G=
 
+set visualbell
+
 " vim: expandtab shiftwidth=4

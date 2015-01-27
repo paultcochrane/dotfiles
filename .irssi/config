@@ -61,6 +61,8 @@ chatnets = {
   Freenode = { type = "IRC"; nick = "[ptc]"; };
   XMPPnet = { type = "XMPP"; };
   irc_perl_org = { type = "IRC"; };
+  dev5media_perl5 = { type = "IRC"; };
+  dev5media_perl6 = { type = "IRC"; };
 };
 
 channels = (

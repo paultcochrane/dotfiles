@@ -176,7 +176,7 @@ popd ()
 devtodo ${TODO_OPTIONS}
 
 # turn off bell in console
-setterm -blength 0
+#setterm -blength 0
 
 if [ -e $HOME/perl5/perlbrew/etc/bashrc ]
 then

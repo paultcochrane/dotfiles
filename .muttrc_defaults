@@ -3,6 +3,7 @@
 set record="=Sent"
 set save_name=yes
 set postponed="=Drafts"
+set trash="=Trash"
 set index_format="%4C %Z %{%b %d %H:%M} %-15.15L (%?l?%4l&%4c?) %s"
 
 # make sure that the From: address is used

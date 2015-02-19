@@ -246,5 +246,4 @@ keycode 252 =
 keycode 253 =
 keycode 254 =
 keycode 255 =
-
 keysym Alt_R = Mode_switch

@@ -144,21 +144,25 @@ function! RunTests()
     let js_files = split(globpath(getcwd(), 'test/test*.js'), '\n')
     let rb_files = split(globpath(getcwd(), 'test/test*.rb'), '\n')
 
-    " run Perl tests
-    if isdirectory('t')
+    let current_filetype = &filetype
+    " run Perl5 tests
+    if current_filetype == "perl"
         if filereadable("t/harness")
             exec ":!perl t/harness"
         else
             exec ":!prove -lr t"
         endif
+    " run Perl6 tests
+    elseif current_filetype == "perl6"
+        exec ":!prove --exec=perl6 -r t"
     " run Python tests
-    elseif isdirectory('tests')
+    elseif current_filetype == "python"
         exec ":!nosetests --rednose"
     " run Ruby tests
-    elseif !empty(rb_files)
+    elseif current_filetype == "ruby"
         exec ":!ruby -Ilib test/test*.rb"
     " run JavaScript tests
-    elseif !empty(js_files)
+    elseif current_filetype == "javascript"
         exec ":!./node_modules/mocha/bin/mocha --reporter list"
     endif
 endfunction

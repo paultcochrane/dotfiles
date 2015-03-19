@@ -141,9 +141,6 @@ endfunction
 map <leader>t :call RunTests()<cr>
 
 function! RunTests()
-    let js_files = split(globpath(getcwd(), 'test/test*.js'), '\n')
-    let rb_files = split(globpath(getcwd(), 'test/test*.rb'), '\n')
-
     let current_filetype = &filetype
     " run Perl5 tests
     if current_filetype == "perl"

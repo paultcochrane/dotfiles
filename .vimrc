@@ -245,6 +245,9 @@ nmap <F8> :TagbarToggle<CR>
 " map indent the entire file with <leader>I
 nnoremap <leader>I gg<C-V>G=
 
+" run `git ci -p`
+nnoremap <leader>c :exec "!git ci -p"<CR>
+
 set visualbell
 
 " vim: expandtab shiftwidth=4

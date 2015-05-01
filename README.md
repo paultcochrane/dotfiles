@@ -103,6 +103,12 @@ screen
     sudo aptitude install screen
     ln -s $HOME/dotfiles/.screenrc $HOME/.screenrc
 
+tmux
+----
+
+    sudo aptitude install tmux
+    ln -s $HOME/dotfiles/.tmux.conf $HOME/.tmux.conf
+
 vim
 ---
 

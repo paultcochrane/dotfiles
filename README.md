@@ -106,8 +106,18 @@ screen
 tmux
 ----
 
+Install `tmux` and link the dotfile:
+
     sudo aptitude install tmux
     ln -s $HOME/dotfiles/.tmux.conf $HOME/.tmux.conf
+
+Install tmux-mem-cpu-load in `$HOME/bin`:
+
+    git clone https://github.com/thewtex/tmux-mem-cpu-load.git
+    cd tmux-mem-cpu-load
+    cmake .
+    make
+    cp tmux-mem-cpu-load $HOME/bin
 
 vim
 ---

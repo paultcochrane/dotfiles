@@ -173,7 +173,7 @@ function! RunTestsForThisFile()
         exec ":!nosetests --rednose %"
     elseif match(filename, '.*.py$') != -1
         :echo filename
-        exec ":!nosetests --rednose tests/test_" . filename
+        exec ":!find ./ -name test_" . filename . "| xargs nosetests --rednose"
     else
         :echo filename
     endif

@@ -151,7 +151,7 @@ function! RunTests()
         endif
     " run Perl6 tests
     elseif current_filetype == "perl6"
-        exec ":!prove --exec=perl6 -r t"
+        exec ":!PERL6LIB=lib prove --exec=perl6 -r t"
     " run Python tests
     elseif current_filetype == "python"
         exec ":!nosetests --rednose"

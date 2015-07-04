@@ -317,7 +317,8 @@ globalkeys = awful.util.table.join(
     -- Lock screen
     awful.key({ modkey },            "F12",     function () awful.util.spawn("xscreensaver-command -lock") end),
     awful.key({ modkey },            "F9",      function () awful.util.spawn("/home/cochrane/bin/set_screen.sh unterwegs") end),
-    awful.key({ modkey },            "F10",     function () awful.util.spawn("/home/cochrane/bin/set_screen.sh awi") end)
+    awful.key({ modkey },            "F10",     function () awful.util.spawn("/home/cochrane/bin/set_screen.sh awi") end),
+    awful.key({ modkey },            "F11",     function () awful.util.spawn("/home/cochrane/bin/set_screen.sh zu_hause") end)
 )
 
 clientkeys = awful.util.table.join(

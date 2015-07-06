@@ -190,3 +190,4 @@ fi
 
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:$HOME/Projekte/OSSProjekte/rakudo/install/bin:$HOME/Projekte/OSSProjekte/rakudo/install/share/perl6/site/bin"
+export PATH="$PATH:$HOME/Projekte/PrivateProjekte/veure/bin"

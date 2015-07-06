@@ -188,4 +188,5 @@ then
     source /opt/intel/bin/compilervars.sh intel64
 fi
 
-export PATH="$PATH:$HOME/.rvm/bin:$HOME/Projekte/OSSProjekte/rakudo/install/bin:$HOME/Projekte/OSSProjekte/rakudo/install/share/perl6/site/bin"
+export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$PATH:$HOME/Projekte/OSSProjekte/rakudo/install/bin:$HOME/Projekte/OSSProjekte/rakudo/install/share/perl6/site/bin"

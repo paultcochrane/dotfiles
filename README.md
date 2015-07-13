@@ -133,8 +133,7 @@ the `Command-T` plugin works.
 Install the [pathogen](https://github.com/tpope/vim-pathogen) plugin:
 
     mkdir -p ~/.vim/autoload ~/.vim/bundle
-    curl -Sso ~/.vim/autoload/pathogen.vim \
-	https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+    curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 Install the [Command-T](https://wincent.com/products/command-t) plugin:
 

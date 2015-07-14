@@ -134,6 +134,7 @@ the `Command-T` plugin works.
 
 Install the [pathogen](https://github.com/tpope/vim-pathogen) plugin:
 
+    sudo aptitude install curl
     mkdir -p ~/.vim/autoload ~/.vim/bundle
     curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 

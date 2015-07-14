@@ -118,6 +118,7 @@ Install tmux-mem-cpu-load in `$HOME/bin`:
     cd tmux-mem-cpu-load
     cmake .
     make
+    if [ ! -d "$HOME/bin" ]; then mkdir -p $HOME/bin; fi
     cp tmux-mem-cpu-load $HOME/bin
 
 vim

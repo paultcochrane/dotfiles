@@ -113,7 +113,7 @@ Install `tmux` and link the dotfile:
 
 Install tmux-mem-cpu-load in `$HOME/bin`:
 
-    sudo aptitude install cmake
+    sudo aptitude install cmake g++
     git clone https://github.com/thewtex/tmux-mem-cpu-load.git
     cd tmux-mem-cpu-load
     cmake .

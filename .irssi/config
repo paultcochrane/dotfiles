@@ -248,3 +248,7 @@ settings = {
   };
 };
 logs = { };
+ignores = (
+  { mask = "fhelmberger"; level = "ALL"; },
+  { mask = "fhelmberger_"; level = "ALL"; }
+);

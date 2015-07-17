@@ -168,14 +168,20 @@ endfunction
 map <leader>T :call RunTestsForThisFile()<cr>
 
 function! RunTestsForThisFile()
-    let filename = expand("%:t")
-    if match(filename, 'test_.*.py$') != -1
-        exec ":!nosetests --rednose %"
-    elseif match(filename, '.*.py$') != -1
-        :echo filename
-        exec ":!find ./ -name test_" . filename . "| xargs nosetests --rednose"
-    else
-        :echo filename
+    let file_and_path = expand("%:p")
+    let current_filetype = &filetype
+    if current_filetype == "perl"
+        exec ":!perl -Ilib " . file_and_path
+    elseif current_filetype == "python"
+        let filename = expand("%:t")
+        if match(filename, 'test_.*.py$') != -1
+            exec ":!nosetests --rednose %"
+        elseif match(filename, '.*.py$') != -1
+            :echo filename
+            exec ":!find ./ -name test_" . filename . "| xargs nosetests --rednose"
+        else
+            :echo filename
+        endif
     endif
 endfunction
 

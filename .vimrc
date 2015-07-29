@@ -199,6 +199,10 @@ function! RunAcceptanceTests()
     endif
 endfunction
 
+" Tidy selected lines (or entire file) with _t:
+nnoremap <silent> _t :%!perltidy -q<Enter>
+vnoremap <silent> _t :!perltidy -q<Enter>
+
 " use "par" as the external formatter (aptitude install par)
 if filereadable("/usr/bin/par")
     set formatprg=par

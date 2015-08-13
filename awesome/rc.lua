@@ -454,4 +454,5 @@ end
 
 run_once("xmodmap ~/.xmodmap")
 run_once("xscreensaver -nosplash &")
-
+run_once("nm-applet &")
+run_once("pa-applet &")

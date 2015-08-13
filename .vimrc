@@ -174,6 +174,8 @@ function! RunTestsForThisFile()
     let current_filetype = &filetype
     if current_filetype == "perl"
         exec ":!perl -Ilib " . file_and_path
+    elseif current_filetype == "perl6"
+        exec ":!perl6 -Ilib " . file_and_path
     elseif current_filetype == "python"
         let filename = expand("%:t")
         if match(filename, 'test_.*.py$') != -1

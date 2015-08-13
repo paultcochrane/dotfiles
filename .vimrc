@@ -97,6 +97,8 @@ if has("autocmd")
 
     " recognise .t as being perl files
     autocmd BufRead,BufNewFile *.t set ft=perl expandtab shiftwidth=4 softtabstop=4
+    " make perl files use my editing options in absence of other settings
+    autocmd BufRead,BufNewFile *.pl set ft=perl expandtab shiftwidth=4 softtabstop=4
     " recognise .pmc and .ops as being C files
     autocmd BufRead,BufNewFile *.pmc set ft=c
     autocmd BufRead,BufNewFile *.ops set ft=c

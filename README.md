@@ -84,6 +84,11 @@ irssi
     sudo aptitude install irssi
     ln -s $HOME/dotfiles/.irssi $HOME/.irssi
 
+mailcap
+-------
+
+    ln -s $HOME/dotfiles/.mailcap $HOME/.mailcap
+
 mutt
 ----
 

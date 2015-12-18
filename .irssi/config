@@ -33,20 +33,6 @@ servers = (
     user_name = "ptc_irc_freenode_net";
     nick = "[ptc]";
   },
-  {
-    address = "talk.google.com";
-    port = "5223";
-    use_ssl = "yes";
-    autoconnect = "no";
-    chatnet = "XMPPnet";
-  },
-  {
-    address = "jabber.ccc.de";
-    port = "5222";
-    use_ssl = "yes";
-    autoconnect = "no";
-    chatnet = "XMPPnet";
-  }
 );
 
 chatnets = {
@@ -59,7 +45,6 @@ chatnets = {
   };
   dev5media = { type = "IRC"; };
   Freenode = { type = "IRC"; nick = "[ptc]"; };
-  XMPPnet = { type = "XMPP"; };
   irc_perl_org = { type = "IRC"; };
   dev5media_perl5 = { type = "IRC"; };
   dev5media_perl6 = { type = "IRC"; };

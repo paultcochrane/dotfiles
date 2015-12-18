@@ -91,6 +91,7 @@ if has("autocmd")
     " ruby files shouldn't use tabs; they use a 2-space indent
     autocmd BufRead,BufNewFile *.rb set expandtab shiftwidth=2 softtabstop=2
     autocmd BufRead,BufNewFile *.gemspec set expandtab shiftwidth=2 softtabstop=2
+    autocmd BufRead,BufNewFile Vagrantfile set expandtab shiftwidth=2 softtabstop=2
 
     " This makes sure that .part files are treated as if they were html
     autocmd BufRead,BufNewFile *.part set ft=html

@@ -16,7 +16,7 @@ servers = (
     chatnet = "Freenode";
   },
   {
-    address = "bnc.dev5media.de";
+    address = "irc.soeren-kornetzki.de";
     port = "6697";
     use_ssl = "yes";
     autoconnect = "no";
@@ -25,7 +25,7 @@ servers = (
     nick = "ptc";
   },
   {
-    address = "bnc.dev5media.de";
+    address = "irc.soeren-kornetzki.de";
     port = "6697";
     use_ssl = "yes";
     autoconnect = "no";

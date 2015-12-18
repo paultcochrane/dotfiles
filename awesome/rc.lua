@@ -303,6 +303,9 @@ globalkeys = awful.util.table.join(
 
     awful.key({ modkey, "Control" }, "n", awful.client.restore),
 
+    awful.key({ modkey }, "Next",  function () awful.client.moveresize( 20,  20, -40, -40) end),
+    awful.key({ modkey }, "Prior", function () awful.client.moveresize(-20, -20,  40,  40) end),
+
     -- Prompt
     awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
 

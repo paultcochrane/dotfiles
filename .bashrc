@@ -78,7 +78,8 @@ export GIT_PS1_SHOWDIRTYSTATE="true"
 export GIT_PS1_SHOWSTASHSTATE="true"
 export GIT_PS1_SHOWUNTRACKEDFILES="true"
 
-FANCY_PS1='${debian_chroot:+($debian_chroot)}$(echo -e "\033(0l\033(B")\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[00;32m\]$(__git_ps1 " (%s)")$(__hg_ps1)\[\033[00m\]\$\n$(echo -e "\033(0m\033(B")> '
+#FANCY_PS1='${debian_chroot:+($debian_chroot)}$(echo -e "\033(0l\033(B")\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[00;32m\]$(__git_ps1 " (%s)")$(__hg_ps1)\[\033[00m\]\$\n$(echo -e "\033(0m\033(B")> '
+FANCY_PS1='$(echo -e "\001\033(0\002l\001\033(B\002")\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[00;32m\]$(__git_ps1 " (%s)")\[\033[00m\]\n$(echo -e "\001\033(0\002m\001\033(B\002")> '
 
 if [ "$color_prompt" = yes ]; then PS1=$FANCY_PS1
 else

@@ -118,6 +118,8 @@ if has("autocmd")
     autocmd BufRead,BufNewFile *.cls set ft=tex
     " recognise .md as being MarkDown format
     autocmd BufRead,BufNewFile *.md set ft=markdown
+    " make sql files use my editing options in absence of other settings
+    autocmd BufRead,BufNewFile *.sql set ft=sql expandtab shiftwidth=2 softtabstop=2
 
 else
 

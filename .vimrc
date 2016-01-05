@@ -33,6 +33,9 @@ let mapleader=","
 
 " ,f => open file using command-t plugin
 map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
+" increase number of files to search for in command-t
+" this allows all files to be found in large projects
+let g:CommandTMaxFiles=50000
 
 " Don't use Ex mode, use Q for formatting
 map Q gq

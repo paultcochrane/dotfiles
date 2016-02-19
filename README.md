@@ -89,12 +89,6 @@ mutt
     ln -s $HOME/dotfiles/.muttrc_defaults $HOME/.muttrc_defaults
     ln -s $HOME/dotfiles/.muttrc_colours $HOME/.muttrc_colours
 
-newsbeuter
-----------
-
-    sudo aptitude install newsbeuter
-    ln -s $HOME/dotfiles/.newsbeuter $HOME/.newsbeuter
-
 screen
 ------
 

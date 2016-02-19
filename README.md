@@ -133,11 +133,9 @@ Install the [pathogen](https://github.com/tpope/vim-pathogen) plugin:
 Install the [Command-T](https://wincent.com/products/command-t) plugin:
 
     sudo aptitude install -y ruby ruby-dev make
-    wget http://s3.wincent.com/command-t/releases/command-t-1.13.vba
-    vim --cmd 'source command-t-1.13.vba | q!'
-    # *or*
-    vim command-t-1.13.vba  # then run :so %
-    cd ~/.vim/ruby/command-t
+    cd ~/.vim
+    git clone https://github.com/wincent/command-t.git bundle/command-t
+    cd ~/.vim/bundle/command-t/ruby/command-t
     ruby extconf.rb
     make
 

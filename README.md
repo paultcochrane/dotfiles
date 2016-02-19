@@ -53,13 +53,6 @@ bash-completion
 
     sudo aptitude install bash-completion
 
-devtodo
--------
-
-The configuration for `devtodo` is in `.bashrc`.
-
-    sudo aptitude install devtodo
-
 ghci
 ----
 

@@ -41,6 +41,11 @@ Make sure that libgweather's locations file is in the expected format for
 
     sudo gunzip /usr/share/libgweather/Locations.xml.gz
 
+Ensure that `xscreensaver` is installed so that the screensaver
+functionality works.
+
+    sudo aptitude install xscreensaver
+
 NOTE: The list of packages here might not be complete.
 
 bash

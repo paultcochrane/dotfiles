@@ -184,6 +184,21 @@ xpdf
     sudo aptitude install xpdf
     ln -s $HOME/dotfiles/.xpdfrc $HOME/.xpdfrc
 
+xplanet
+-------
+
+    sudo aptitude install xplanet
+    ln -s $HOME/dotfiles/.xplanet $HOME/.xplanet
+    mkdir $HOME/.xplanet/cloud_maps
+
+Link script to update the cloud maps into `~/bin`:
+
+    ln -s $HOME/.xplanet/update_clound_maps.sh $HOME/bin/
+
+Run `xplanet` like so:
+
+    xplanet -latitude 54.4 -longitude 9.7 -transparency
+
 xsession
 --------
 

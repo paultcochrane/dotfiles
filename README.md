@@ -193,7 +193,7 @@ xplanet
 
 Link script to update the cloud maps into `~/bin`:
 
-    ln -s $HOME/.xplanet/update_clound_maps.sh $HOME/bin/
+    ln -s $HOME/.xplanet/update_cloud_maps.sh $HOME/bin/
 
 Run `xplanet` like so:
 

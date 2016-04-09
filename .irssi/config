@@ -23,6 +23,7 @@ servers = (
     chatnet = "perl5";
     user_name = "ptc_irc_perl_org";
     nick = "ptc";
+    #family = "inet6";
   },
   {
     address = "irc.soeren-kornetzki.de";
@@ -32,7 +33,8 @@ servers = (
     chatnet = "perl6";
     user_name = "ptc_irc_freenode_net";
     nick = "[ptc]";
-  },
+    #family = "inet6";
+  }
 );
 
 chatnets = {

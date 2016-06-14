@@ -1,2 +1,5 @@
 *~
 *.swp
+cloud_maps/
+config.autosave
+default.theme

@@ -36,8 +36,8 @@ map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 " increase number of files to search for in command-t
 " this allows all files to be found in large projects
 let g:CommandTMaxFiles=50000
-" ignore files under the blib/ directory
-set wildignore+=blib/**
+" ignore files under the blib/ and venv/ directories
+set wildignore+=blib/**,venv/**,*~
 
 " Don't use Ex mode, use Q for formatting
 map Q gq

@@ -160,5 +160,5 @@ then
 fi
 
 export PATH="$PATH:$HOME/.rvm/bin"
-export PATH="$PATH:$HOME/Projekte/OSSProjekte/perl6/MoarVM/install/bin:$HOME/Projekte/OSSProjekte/perl6/MoarVM/install/share/perl6/site/bin"
+export PATH="$PATH:$HOME/perl6/bin:$HOME/perl6/share/perl6/site/bin"
 export PATH="$PATH:$HOME/Projekte/PrivatProjekte/veure/bin"

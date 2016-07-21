@@ -265,6 +265,7 @@ inoremap <s-tab> <c-n>
 setlocal omnifunc=necoghc#omnifunc
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_rst_checkers = ['Sphinx']
+let g:syntastic_check_on_open = 1
 
 " map toggling tagbar window to F8
 nmap <F8> :TagbarToggle<CR>

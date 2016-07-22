@@ -7,6 +7,7 @@ instructions for the respective software package.
 abcde
 -----
 
+    sudo aptitude install abcde eye3d
     ln -s $HOME/dotfiles/.abcde.conf $HOME/.abcde.conf
 
 awesome

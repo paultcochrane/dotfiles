@@ -215,6 +215,19 @@ function! RunAcceptanceTests()
     endif
 endfunction
 
+" add vim coda (and if necessary encoding) depending on filetype
+function! AddCodaAndEncoding()
+    let current_filetype = &filetype
+    if current_filetype == "perl"
+        normal! Go# vim: expandtab shiftwidth=4
+    elseif current_filetype == "python"
+        :execute "normal! ggI# -*- coding: utf-8 -*-\<CR>\<CR>"
+        normal! Go# vim: expandtab shiftwidth=4 softtabstop=4
+    endif
+endfunction
+
+map <leader>C :call AddCodaAndEncoding()<cr>
+
 " Tidy selected lines (or entire file) with _t:
 nnoremap <silent> _t :%!perltidy -q<Enter>
 vnoremap <silent> _t :!perltidy -q<Enter>

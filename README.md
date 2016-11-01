@@ -49,6 +49,19 @@ functionality works.
 
 NOTE: The list of packages here might not be complete.
 
+Create the following text as `/usr/share/xsessions/awesome.desktop`
+
+    [Desktop Entry]
+    Encoding=UTF-8
+    Name=awesome
+    Comment=Highly configurable framework window manager
+    NoDisplay=false
+    TryExec=awesome
+    Exec=awesome
+    Type=Application
+
+this will allow awesome to appear as a display manager option.
+
 bash
 ----
 

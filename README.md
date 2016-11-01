@@ -68,6 +68,7 @@ bash
 ----
 
     ln -s $HOME/dotfiles/.bashrc $HOME/.bashrc
+    ln -s $HOME/dotfiles/.bash_aliases $HOME/.bash_aliases
 
 bash-completion
 ---------------

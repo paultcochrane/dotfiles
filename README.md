@@ -4,6 +4,11 @@ A collection of my dotfiles
 In order for the dotfiles to work, one needs to follow the installation
 instructions for the respective software package.
 
+## Initial setup
+
+    su -
+    aptitude install sudo vim tmux git awesome terminator mutt
+
 abcde
 -----
 

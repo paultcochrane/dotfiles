@@ -60,7 +60,9 @@ Create the following text as `/usr/share/xsessions/awesome.desktop`
     Exec=awesome
     Type=Application
 
-this will allow awesome to appear as a display manager option.
+this will allow awesome to appear as a display manager option.  Note that
+`NoDisplay` is set to `false`!  If it is left at its `true` value, awesome
+won't turn up in the menu.
 
 bash
 ----

@@ -7,7 +7,8 @@ instructions for the respective software package.
 ## Initial setup
 
     su -
-    aptitude install sudo vim tmux git awesome terminator mutt xscreensaver irssi
+    aptitude install sudo vim tmux git awesome terminator mutt xscreensaver \
+	irssi moc
 
 abcde
 -----
@@ -135,6 +136,13 @@ mailcap
 -------
 
     ln -s $HOME/dotfiles/.mailcap $HOME/.mailcap
+
+mocp
+----
+
+There aren't any dotfiles for this, but it's handy to have around.
+
+    sudo aptitude install moc
 
 mutt
 ----

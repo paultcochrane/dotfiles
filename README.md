@@ -7,7 +7,7 @@ instructions for the respective software package.
 ## Initial setup
 
     su -
-    aptitude install sudo vim tmux git awesome terminator mutt
+    aptitude install sudo vim tmux git awesome terminator mutt xscreensaver irssi
 
 abcde
 -----

@@ -69,6 +69,33 @@ this will allow awesome to appear as a display manager option.  Note that
 `NoDisplay` is set to `false`!  If it is left at its `true` value, awesome
 won't turn up in the menu.
 
+This setup for aweseome also requires the `pa-applet` Gnome applet.  This
+applet is no longer contained in Gnome or in fact associated with the
+PulseAudio project anymore.  Nevertheless, it's useful for the setup here.
+To install it, clone the repository and enter the repo directory:
+
+    git clone git@github.com:fernandotcl/pa-applet.git
+    cd pa-applet
+
+To build the sources, the following packages need to be installed:
+
+    sudo aptitude install autoconf automake libglib2.0-dev libgtk-3-dev \
+	libnotify-dev libpulse-dev libx11-dev pkg-config
+
+Now configure and build the project
+
+    autoreconf --install
+    ./configure
+    make
+
+It could be that the build barfs with an error about a deprecated function.
+If this is the case, remove the `-Werror` flag from `src/Makefile.in` and
+`src/Makefile.am`, rerun `autoreconf` and `./configure` and run `make`.
+
+Once the binary has been built, copy it into the `$HOME/bin` directory:
+
+    cp src/pa-applet $HOME/bin
+
 bash
 ----
 

@@ -24,8 +24,8 @@ memwidget:set_height(10)
 memwidget:set_vertical(true)
 memwidget:set_background_color("#494B4F")
 memwidget:set_border_color(nil)
-memwidget:set_color({ type = "linear", from = { 0, 0 }, to = { 10,0 }, stops = { {0, "#AECF96"}, {0.5, "#88A175"}, 
-                    {1, "#FF5656"}}})
+memwidget:set_color({ type = "linear", from = { 0, 0 }, to = { 10,0 },
+		    stops = { {0, "#AECF96"}, {0.5, "#88A175"}, {1, "#FF5656"}}})
 vicious.register(memwidget, vicious.widgets.mem, "$1", 13)
 
 -- CPU usage (text)
@@ -36,8 +36,8 @@ vicious.register(textcpuwidget, vicious.widgets.cpu, "Cpu: $1%")
 cpuwidget = awful.widget.graph()
 cpuwidget:set_width(50)
 cpuwidget:set_background_color("#494B4F")
-cpuwidget:set_color({ type = "linear", from = { 0, 0 }, to = { 10,0 }, stops = { {0, "#FF5656"}, {0.5, "#88A175"}, 
-                    {1, "#AECF96" }}})
+cpuwidget:set_color({ type = "linear", from = { 0, 0 }, to = { 10,0 },
+		    stops = { {0, "#FF5656"}, {0.5, "#88A175"}, {1, "#AECF96" }}})
 vicious.register(cpuwidget, vicious.widgets.cpu, "$1")
 
 -- Battery usage (text)
@@ -51,8 +51,8 @@ batwidget:set_height(10)
 batwidget:set_vertical(true)
 batwidget:set_background_color("#494B4F")
 batwidget:set_border_color(nil)
-batwidget:set_color({ type = "linear", from = { 0, 0 }, to = { 10,0 }, stops = { {0, "#AECF96"}, {0.5, "#88A175"}, 
-                    {1, "#FF5656"}}})
+batwidget:set_color({ type = "linear", from = { 0, 0 }, to = { 10,0 },
+		    stops = { {0, "#AECF96"}, {0.5, "#88A175"}, {1, "#FF5656"}}})
 vicious.register(batwidget, vicious.widgets.bat, "$2", 30, 'BAT0')
 
 -- Network usage (text)

@@ -1,5 +1,15 @@
 # .muttrc standard settings for all accounts
 
+# set up the pager the way I like it
+# tips were found here: http://www.guckes.net/Mutt/setup.html
+set pager="builtin"  # default setting, but now it's obvious
+set pager_stop=yes   # don't go to next message automatically
+bind pager \cf half-down  # use ^F to scroll down (like in `less`)
+bind pager \cb half-up    # use ^B to scroll up (like in `less`)
+bind pager j next-line      # remap default keys to stay in message when
+bind pager k previous-line  # in pager rather than going to another message
+
+# set up the mailboxes
 set record="=Sent"
 set save_name=yes
 set postponed="=Drafts"

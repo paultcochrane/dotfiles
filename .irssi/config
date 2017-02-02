@@ -230,7 +230,6 @@ settings = {
     beep_when_window_active = "yes";
     beep_when_away = "yes";
     beep_msg_level = "MSGS NOTICES DCC DCCMSGS HILIGHT";
-    bell_beeps = "yes";
   };
 };
 logs = { };

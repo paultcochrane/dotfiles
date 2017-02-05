@@ -11,6 +11,55 @@ local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup").widget
 
+-- Handy widget set
+local vicious = require("vicious")
+
+-- Memory usage (text)
+textmemwidget = wibox.widget.textbox()
+vicious.register(textmemwidget, vicious.widgets.mem, "Mem: $1%", 13)
+
+-- Memory usage (progressbar)
+memwidget = awful.widget.progressbar()
+memwidget:set_width(8)
+memwidget:set_height(10)
+memwidget:set_vertical(true)
+memwidget:set_background_color("#494B4F")
+memwidget:set_border_color(nil)
+memwidget:set_color({ type = "linear", from = { 0, 0 }, to = { 10,0 },
+		    stops = { {0, "#AECF96"}, {0.5, "#88A175"}, {1, "#FF5656"}}})
+vicious.register(memwidget, vicious.widgets.mem, "$1", 13)
+
+-- CPU usage (text)
+textcpuwidget = wibox.widget.textbox()
+vicious.register(textcpuwidget, vicious.widgets.cpu, "Cpu: $1%", 4)
+
+-- CPU usage (graph)
+cpuwidget = awful.widget.graph()
+cpuwidget:set_width(50)
+cpuwidget:set_background_color("#494B4F")
+cpuwidget:set_color({ type = "linear", from = { 0, 0 }, to = { 10,0 },
+		    stops = { {0, "#FF5656"}, {0.5, "#88A175"}, {1, "#AECF96" }}})
+vicious.register(cpuwidget, vicious.widgets.cpu, "$1", 5)
+
+-- Battery usage (text)
+textbatwidget = wibox.widget.textbox()
+vicious.register(textbatwidget, vicious.widgets.bat, "Bat: $2%", 30, 'BAT0')
+
+-- Battery usage (progressbar)
+batwidget = awful.widget.progressbar()
+batwidget:set_width(8)
+batwidget:set_height(10)
+batwidget:set_vertical(true)
+batwidget:set_background_color("#494B4F")
+batwidget:set_border_color(nil)
+batwidget:set_color({ type = "linear", from = { 0, 0 }, to = { 10,0 },
+		    stops = { {0, "#AECF96"}, {0.5, "#88A175"}, {1, "#FF5656"}}})
+vicious.register(batwidget, vicious.widgets.bat, "$2", 30, 'BAT0')
+
+-- Network usage (text)
+textwifiwidget = wibox.widget.textbox()
+vicious.register(textwifiwidget, vicious.widgets.net, "Wifi: ↓ ${wlp2s0 down_kb}kb, ↑ ${wlp2s0 up_kb}kb")
+
 -- Load Debian menu entries
 require("debian.menu")
 
@@ -219,6 +268,13 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
             wibox.widget.systray(),
+            textmemwidget,
+            memwidget,
+            textcpuwidget,
+            cpuwidget,
+            textbatwidget,
+            batwidget,
+            textwifiwidget,
             mytextclock,
             s.mylayoutbox,
         },

@@ -297,4 +297,8 @@ nnoremap <leader>c :exec "!git ci -p"<CR>
 
 set visualbell
 
+filetype off
+set runtimepath+=/home/cochrane/lilypond/usr/share/lilypond/current/vim/
+filetype on
+
 " vim: expandtab shiftwidth=4

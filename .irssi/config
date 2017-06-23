@@ -5,6 +5,7 @@ servers = (
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "no";
+    nick = "ptc";
     chatnet = "irc_perl_org";
   },
   {
@@ -13,6 +14,7 @@ servers = (
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "no";
+    nick = "[ptc]";
     chatnet = "Freenode";
   },
   {

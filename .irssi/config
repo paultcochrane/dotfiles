@@ -6,7 +6,7 @@ servers = (
     ssl_verify = "no";
     autoconnect = "no";
     nick = "ptc";
-    chatnet = "irc_perl_org";
+    chatnet = "perl5";
   },
   {
     address = "irc.freenode.net";
@@ -15,28 +15,8 @@ servers = (
     ssl_verify = "no";
     autoconnect = "no";
     nick = "[ptc]";
-    chatnet = "Freenode";
-  },
-  {
-    address = "irc.soeren-kornetzki.de";
-    port = "6697";
-    use_ssl = "yes";
-    autoconnect = "no";
-    chatnet = "perl5";
-    user_name = "ptc_irc_perl_org";
-    nick = "ptc";
-    #family = "inet6";
-  },
-  {
-    address = "irc.soeren-kornetzki.de";
-    port = "6697";
-    use_ssl = "yes";
-    autoconnect = "no";
     chatnet = "perl6";
-    user_name = "ptc_irc_freenode_net";
-    nick = "[ptc]";
-    #family = "inet6";
-  }
+  },
 );
 
 chatnets = {
@@ -47,10 +27,8 @@ chatnets = {
     max_whois = "4";
     max_query_chans = "5";
   };
-  Freenode = { type = "IRC"; nick = "[ptc]"; };
-  irc_perl_org = { type = "IRC"; };
+  perl6 = { type = "IRC"; nick = "[ptc]"; };
   perl5 = { type = "IRC"; };
-  perl6 = { type = "IRC"; };
 };
 
 channels = (

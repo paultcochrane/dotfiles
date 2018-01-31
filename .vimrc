@@ -304,4 +304,7 @@ filetype off
 set runtimepath+=/home/cochrane/lilypond/usr/share/lilypond/current/vim/
 filetype on
 
+" don't indent text inside these environments
+let g:tex_noindent_env='document\|verbatim\|lstlisting\|letter'
+
 " vim: expandtab shiftwidth=4

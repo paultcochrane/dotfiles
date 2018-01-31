@@ -16,6 +16,12 @@ abcde
     sudo aptitude install abcde eye3d lame
     ln -s $HOME/dotfiles/.abcde.conf $HOME/.abcde.conf
 
+alacritty
+---------
+
+    mkdir -p $HOME/.config/alacritty
+    ln -s $HOME/dotfiles/alacritty/alacritty.yml $HOME/.config/alacritty/alacritty.yml
+
 awesome
 -------
 

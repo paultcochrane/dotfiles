@@ -36,6 +36,7 @@ channels = (
   { name = "silc"; chatnet = "silc"; autojoin = "No"; },
   { name = "#perl6"; chatnet = "perl6"; autojoin = "Yes"; }
   { name = "#pr-challenge"; chatnet = "perl5"; autojoin = "Yes"; }
+  { name = "#cpantesters-discuss"; chatnet = "perl5"; autojoin = "Yes"; }
 );
 
 aliases = {

@@ -60,9 +60,10 @@ endif
 
 " cursor highlighting
 set cursorline          " highlight current line
-" highlight the background "sort of grey", i.e. Black (which isn't actually
-" black when using the gnome colours in Terminator)
-highlight CursorLine ctermbg=Black cterm=none
+" highlight the background with a dark grey
+" used the xterm256 colour chart to work out which number to use:
+" https://en.wikipedia.org/wiki/File%3aXterm_256color_chart.svg
+highlight CursorLine ctermbg=236 cterm=none
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")

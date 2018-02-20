@@ -309,4 +309,11 @@ filetype on
 " don't indent text inside these environments
 let g:tex_noindent_env='document\|verbatim\|lstlisting\|letter'
 
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_left_sep = '⮀'
+let g:airline_right_sep = '⮂'
+let g:airline_symbols.branch = '⭠'
+
 " vim: expandtab shiftwidth=4

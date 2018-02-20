@@ -31,6 +31,7 @@ set scrolloff=10        " always see the top or bottom 10 lines in the window
 set number              " use line numbers
 set relativenumber      " show line numbers as relative to current
 set winheight=40        " focussed windows in splits have this height
+set encoding=utf-8
 
 " stop folds from occuring
 set nofoldenable

@@ -237,7 +237,7 @@ endfunction
 map <leader>C :call AddCodaAndEncoding()<cr>
 
 " add pdb set_trace via ,p
-nnoremap <leader>p iimport pdb; pdb.set_trace()<cr><esc>
+nnoremap <leader>p oimport pdb; pdb.set_trace()<cr><esc>
 
 " Tidy selected lines (or entire file) with _t:
 nnoremap <silent> _t :%!perltidy -q<Enter>

@@ -30,8 +30,7 @@ Install the necessary packages
     sudo aptitude install awesome awesome-extra\
 	gnome-icon-theme\
 	sensors-applet\
-	lua-expat\
-	liblua5.1-socket2
+	lua-expat
 
 Link the HOME directory appropriately
 

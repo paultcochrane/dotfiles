@@ -34,7 +34,7 @@ unset imap_passive
 # Automatically poll subscribed mailboxes for new mail (new in 1.5.11)
 set imap_check_subscribed
 # Reduce polling frequency to a sane level
-set mail_check=60
+set mail_check=600
 # And poll the current mailbox more often (not needed with IDLE in post 1.5.11)
 set timeout=10
 # keep a cache of headers for faster loading (1.5.9+?)

@@ -45,7 +45,7 @@ map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 " this allows all files to be found in large projects
 let g:CommandTMaxFiles=50000
 " ignore files under the blib/ and venv/ directories
-set wildignore+=blib/**,venv*/**,node_modules/**,*~
+set wildignore+=blib/**,venv*/**,node_modules/**,*~,data/**
 
 " Don't use Ex mode, use Q for formatting
 map Q gq

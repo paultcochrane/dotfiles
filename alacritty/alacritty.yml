@@ -30,8 +30,8 @@ window:
     y: 2
 
   # Window decorations
-  # Setting this to false will result in window without borders and title bar.
-  decorations: true
+  # Setting this to none will result in window without borders and title bar.
+  decorations: "none"
 
 # Display tabs using this many cells (changes require restart)
 tabspaces: 8

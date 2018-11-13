@@ -218,6 +218,7 @@ logs = { };
 ignores = (
   { mask = "fhelmberger"; level = "ALL"; },
   { mask = "fhelmberger_"; level = "ALL"; },
-  { mask = "Remote host closed the connection"; level = "ALL"; },
-  { mask = "has quite K-Lined"; level = "ALL"; }
+  { level = "PARTS"; },
+  { level = "JOINS"; },
+  { level = "QUITS"; }
 );

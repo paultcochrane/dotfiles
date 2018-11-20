@@ -1,3 +1,5 @@
 application/pdf; /usr/bin/evince %s; test=test "$DISPLAY" != ""; description=Portable Document Format; nametemplate=%s.pdf
 application/x-pdf; /usr/bin/evince %s; test=test "$DISPLAY" != ""; description=Portable Document Format; nametemplate=%s.pdf
 application/x-bzip2; file-roller %s; test=test -n "$DISPLAY"
+# https://unix.stackexchange.com/a/445566
+text/html; firefox %s;copiousoutput

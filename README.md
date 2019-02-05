@@ -202,7 +202,7 @@ Install the [Command-T](https://wincent.com/products/command-t) plugin:
     sudo aptitude install -y ruby ruby-dev make
     cd ~/.vim
     git clone https://github.com/wincent/command-t.git bundle/command-t
-    cd ~/.vim/bundle/command-t/ruby/command-t
+    cd ~/.vim/bundle/command-t/ruby/command-t/ext/command-t/
     ruby extconf.rb
     make
 

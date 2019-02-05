@@ -10,6 +10,9 @@ elseif version == 3.4 then
 elseif version == 4.0 then
     print("Loading awesome 4.0 configuration")
     dofile("/home/cochrane/.config/awesome/rc.lua.4.0")
+elseif version == 4.2 then
+    print("Loading awesome 4.2 configuration")
+    dofile("/home/cochrane/.config/awesome/rc.lua.4.2")
 else
     print("Unknown awesome version; loading default Debian config")
     dofile("/etc/xdg/awesome/rc.lua")

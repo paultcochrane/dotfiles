@@ -40,12 +40,15 @@ set nofoldenable
 let mapleader=","
 
 " ,f => open file using command-t plugin
-map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
+" map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 " increase number of files to search for in command-t
 " this allows all files to be found in large projects
 let g:CommandTMaxFiles=50000
 " ignore files under the blib/ and venv/ directories
 set wildignore+=blib/**,venv*/**,node_modules/**,*~,data/**
+
+" use ctrlp plugin for fuzzy file search
+map <leader>f <c-p>
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
@@ -307,6 +310,7 @@ set visualbell
 filetype off
 set runtimepath+=/home/cochrane/lilypond/usr/share/lilypond/current/vim/
 filetype on
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " don't indent text inside these environments
 let g:tex_noindent_env='document\|verbatim\|lstlisting\|letter'

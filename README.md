@@ -197,6 +197,11 @@ Install the [pathogen](https://github.com/tpope/vim-pathogen) plugin:
     mkdir -p ~/.vim/autoload ~/.vim/bundle
     curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
+Install the [ctrlp](https://github.com/ctrlpvim/ctrlp.vim) plugin:
+
+    cd ~/.vim
+    git clone https://github.com/ctrlpvim/ctrlp.vim.git bundle/ctrlp.vim
+
 Install the [Command-T](https://wincent.com/products/command-t) plugin:
 
     sudo aptitude install -y ruby ruby-dev make

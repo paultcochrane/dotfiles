@@ -161,7 +161,7 @@ then
     source /opt/intel/bin/compilervars.sh intel64
 fi
 
-export PATH="$PATH:$HOME/.rvm/bin"
+source /home/cochrane/.rvm/scripts/rvm
 export PATH="$PATH:$HOME/perl6/bin:$HOME/perl6/share/perl6/site/bin"
 export PATH="$PATH:$HOME/.perl6/bin"
 export PATH=$PATH:$HOME/node/bin

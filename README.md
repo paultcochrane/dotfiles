@@ -156,6 +156,12 @@ mutt
     ln -s $HOME/dotfiles/.muttrc_defaults $HOME/.muttrc_defaults
     ln -s $HOME/dotfiles/.muttrc_colours $HOME/.muttrc_colours
 
+newsboat
+--------
+
+    sudo apt install newsboat
+    ln -s $HOME/dotfiles/.newsboat $HOME/.newsboat
+
 screen
 ------
 

@@ -45,7 +45,7 @@ let mapleader=","
 " this allows all files to be found in large projects
 let g:CommandTMaxFiles=50000
 " ignore files under the blib/ and venv/ directories
-set wildignore+=blib/**,*/venv*/**,node_modules/**,*~,data/**
+set wildignore+=blib/**,*/venv*/**,*/node_modules/**,*~,data/**
 
 " use ctrlp plugin for fuzzy file search
 let g:ctrlp_max_files=0

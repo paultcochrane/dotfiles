@@ -136,6 +136,8 @@ if has("autocmd")
     autocmd BufRead,BufNewFile *.md set ft=markdown
     " make sql files use my editing options in absence of other settings
     autocmd BufRead,BufNewFile *.sql set ft=sql expandtab shiftwidth=2 softtabstop=2
+    " make javascript files use my editing options in absence of other settings
+    autocmd BufRead,BufNewFile *.js set ft=javascript expandtab shiftwidth=4 softtabstop=4
     " Jenkinsfiles are Groovy-formatted
     autocmd BufRead,BufNewFile Jenkinsfile set ft=Groovy expandtab shiftwidth=4 softtabstop=4
 

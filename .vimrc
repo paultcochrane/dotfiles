@@ -240,6 +240,8 @@ function! AddCodaAndEncoding()
     elseif current_filetype == "python"
         :execute "normal! ggI# -*- coding: utf-8 -*-\<CR>\<CR>"
         normal! Go# vim: expandtab shiftwidth=4 softtabstop=4
+    elseif current_filetype == "javascript"
+        normal! Go// vim: expandtab shiftwidth=4 softtabstop=4
     endif
 endfunction
 

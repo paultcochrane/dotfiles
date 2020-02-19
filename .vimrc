@@ -185,7 +185,7 @@ function! RunTests()
         exec ":!PERL6LIB=lib prove --exec=perl6 -r t"
     " run Python tests
     elseif current_filetype == "python"
-        exec ":!clear; nosetests --rednose"
+        exec ":!clear; pytest tests"
     " run Ruby tests
     elseif current_filetype == "ruby"
         exec ":!ruby -Ilib test/test*.rb"

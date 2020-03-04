@@ -15,7 +15,7 @@ servers = (
     ssl_verify = "no";
     autoconnect = "no";
     nick = "[ptc]";
-    chatnet = "perl6";
+    chatnet = "raku";
   }
 );
 
@@ -27,14 +27,14 @@ chatnets = {
     max_whois = "4";
     max_query_chans = "5";
   };
-  perl6 = { type = "IRC"; nick = "[ptc]"; };
+  raku = { type = "IRC"; nick = "[ptc]"; };
   perl5 = { type = "IRC"; };
 };
 
 channels = (
   { name = "#irssi"; chatnet = "ircnet"; autojoin = "No"; },
   { name = "silc"; chatnet = "silc"; autojoin = "No"; },
-  { name = "#perl6"; chatnet = "perl6"; autojoin = "Yes"; },
+  { name = "#raku"; chatnet = "raku"; autojoin = "Yes"; },
   { name = "#pr-challenge"; chatnet = "perl5"; autojoin = "Yes"; },
   { name = "#cpantesters-discuss"; chatnet = "perl5"; autojoin = "Yes"; }
 );

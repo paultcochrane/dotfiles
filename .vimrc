@@ -185,13 +185,13 @@ function! RunTests()
         exec ":!PERL6LIB=lib prove --exec=perl6 -r t"
     " run Python tests
     elseif current_filetype == "python"
-        exec ":!clear; pytest tests"
+        exec ":!clear; make test"
     " run Ruby tests
     elseif current_filetype == "ruby"
         exec ":!ruby -Ilib test/test*.rb"
     " run JavaScript tests
     elseif current_filetype == "javascript"
-        exec ":!./node_modules/mocha/bin/mocha --reporter list"
+        exec ":!make test"
     endif
 endfunction
 

@@ -16,7 +16,6 @@ local vicious = require("vicious")
 local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
 local cpu_widget = require("awesome-wm-widgets.cpu-widget.cpu-widget")
 local ram_widget = require("awesome-wm-widgets.ram-widget.ram-widget")
--- local batteryarc_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
 
 -- Memory usage (text)
 textmemwidget = wibox.widget.textbox()
@@ -278,7 +277,6 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
             wibox.widget.systray(),
-	    -- batteryarc_widget,
 	    battery_widget,
 	    ram_widget,
             cpu_widget,

@@ -48,6 +48,11 @@ Set up delightful's submodules
     git submodule init
     git submodule update
 
+Set up the awesome-wm-widgets repository
+
+    cd $HOME/dotfiles/awesome
+    git clone git@github.com:streetturtle/awesome-wm-widgets.git
+
 Make sure that libgweather's locations file is in the expected format for
 `aweseome`.
 

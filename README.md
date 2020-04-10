@@ -53,6 +53,12 @@ Set up the awesome-wm-widgets repository
     cd $HOME/dotfiles/awesome
     git clone git@github.com:streetturtle/awesome-wm-widgets.git
 
+Download and install the Arc icons (required for awesome-wm-widgets)
+
+    git clone https://github.com/horst3180/arc-icon-theme --depth 1 && cd arc-icon-theme
+    ./autogen.sh --prefix=/usr
+    sudo make install
+
 Make sure that libgweather's locations file is in the expected format for
 `aweseome`.
 

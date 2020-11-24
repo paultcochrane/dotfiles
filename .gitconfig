@@ -13,6 +13,7 @@
 	stashed = stash list --pretty=format:'%gd: %Cred%h%Creset %Cgreen[%ar]%Creset %s'
 	cherrypick = cherry-pick
 	nuke = !"f() { git branch -d $1 && git push origin --delete $1; }; f"
+        test-fork = !"f() { git rebase $(git merge-base --fork-point origin/master $(git rev-parse --abbrev-ref HEAD)) -x 'make test'; }; f"
 [color]
 	ui = true
 [push]

@@ -19,6 +19,7 @@ shopt -s histappend
 HISTSIZE=1000
 HISTFILESIZE=2000
 HISTTIMEFORMAT="%Y-%m-%d_%H:%M "
+PROMPT_COMMAND='history -a'  # tip found here: https://sanctum.geek.nz/arabesque/better-bash-history/
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.

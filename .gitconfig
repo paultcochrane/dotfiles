@@ -1,20 +1,20 @@
 [user]
-	name = Paul Cochrane
-	email = paul.cochrane@posteo.de
+        name = Paul Cochrane
+        email = paul.cochrane@posteo.de
 [core]
-	excludesfile = ~/.gitignore_global
+        excludesfile = ~/.gitignore_global
 [alias]
-	st = status
-	di = diff
-	ci = commit -v
-	hist = log --graph --all --color=always --decorate --oneline
-	co = checkout
-	grog = log --graph --abbrev-commit --decorate --all --format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\"
-	stashed = stash list --pretty=format:'%gd: %Cred%h%Creset %Cgreen[%ar]%Creset %s'
-	cherrypick = cherry-pick
-	nuke = !"f() { git branch -d $1 && git push origin --delete $1; }; f"
+        st = status
+        di = diff
+        ci = commit -v
+        hist = log --graph --all --color=always --decorate --oneline
+        co = checkout
+        grog = log --graph --abbrev-commit --decorate --all --format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\"
+        stashed = stash list --pretty=format:'%gd: %Cred%h%Creset %Cgreen[%ar]%Creset %s'
+        cherrypick = cherry-pick
+        nuke = !"f() { git branch -d $1 && git push origin --delete $1; }; f"
         test-fork = !"f() { git rebase $(git merge-base --fork-point origin/master $(git rev-parse --abbrev-ref HEAD)) -x 'make test'; }; f"
 [color]
-	ui = true
+        ui = true
 [push]
-	default = current
+        default = current

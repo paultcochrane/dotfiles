@@ -139,7 +139,7 @@ if has("autocmd")
     " make javascript files use my editing options in absence of other settings
     autocmd BufRead,BufNewFile *.js set ft=javascript expandtab shiftwidth=4 softtabstop=4
     " Jenkinsfiles are Groovy-formatted
-    autocmd BufRead,BufNewFile Jenkinsfile set ft=Groovy expandtab shiftwidth=4 softtabstop=4
+    autocmd BufRead,BufNewFile Jenkinsfile set ft=groovy expandtab shiftwidth=4 softtabstop=4
 
 else
 

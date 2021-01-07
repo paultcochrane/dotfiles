@@ -403,7 +403,7 @@ globalkeys = awful.util.table.join(
 
     -- Multiple/single monitor toggling
     awful.key({ modkey },            "F9",      function () awful.util.spawn("/home/cochrane/bin/set-screen laptop") end),
-    awful.key({ modkey },            "F11",     function () awful.util.spawn("/home/cochrane/bin/set-screen work") end),
+    awful.key({ modkey },            "F11",     function () awful.util.spawn("/home/cochrane/bin/set-screen home") end),
     awful.key({ modkey },            "F5",      function () awful.util.spawn("mocp --unpause") end),
     awful.key({ modkey },            "F6",      function () awful.util.spawn("mocp --pause") end)
 )

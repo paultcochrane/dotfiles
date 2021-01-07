@@ -20,7 +20,7 @@ set index_format="%4C %Z %{%b %d %H:%M} %-15.15L (%?l?%4l&%4c?) %s"
 set use_from=yes
 
 # pretty print through paps
-set print_command="paps | lpr"
+set print_command="a2ps | lpr -o sides=two-sided-long-edge -P HP_ENVY_4520_series_937E5C_"
 
 set mime_forward=yes
 set mime_forward_rest=yes

@@ -140,6 +140,8 @@ if has("autocmd")
     autocmd BufRead,BufNewFile *.js set ft=javascript expandtab shiftwidth=4 softtabstop=4
     " Jenkinsfiles are Groovy-formatted
     autocmd BufRead,BufNewFile Jenkinsfile set ft=groovy expandtab shiftwidth=4 softtabstop=4
+    " recognise any file matching "Dockerfile" as a Dockerfile
+    autocmd BufRead,BufNewFile *Dockerfile* set ft=dockerfile expandtab shiftwidth=4 softtabstop=4
 
 else
 

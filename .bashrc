@@ -162,7 +162,10 @@ then
     source /opt/intel/bin/compilervars.sh intel64
 fi
 
-source /home/cochrane/.rvm/scripts/rvm
+if [ -f /home/cochrane/.rvm/scripts/rvm ]
+then
+    source /home/cochrane/.rvm/scripts/rvm
+fi
 export PATH=$PATH:$HOME/node/bin
 
 # added by travis gem

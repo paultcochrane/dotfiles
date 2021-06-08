@@ -138,6 +138,8 @@ if has("autocmd")
     autocmd BufRead,BufNewFile *.sql set ft=sql expandtab shiftwidth=2 softtabstop=2
     " make javascript files use my editing options in absence of other settings
     autocmd BufRead,BufNewFile *.js set ft=javascript expandtab shiftwidth=4 softtabstop=4
+    " make typescript files use my editing options in absence of other settings
+    autocmd BufRead,BufNewFile *.ts set ft=typescript expandtab shiftwidth=4 softtabstop=4
     " Jenkinsfiles are Groovy-formatted
     autocmd BufRead,BufNewFile Jenkinsfile set ft=groovy expandtab shiftwidth=4 softtabstop=4
     " recognise any file matching "Dockerfile" as a Dockerfile
@@ -192,7 +194,7 @@ function! RunTests()
     elseif current_filetype == "ruby"
         exec ":!ruby -Ilib test/test*.rb"
     " run JavaScript tests
-    elseif current_filetype == "javascript"
+    elseif current_filetype == "javascript" || current_filetype == "typescript"
         exec ":!make test"
     endif
 endfunction

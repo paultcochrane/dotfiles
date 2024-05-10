@@ -162,10 +162,6 @@ then
     source /opt/intel/bin/compilervars.sh intel64
 fi
 
-if [ -f /home/cochrane/.rvm/scripts/rvm ]
-then
-    source /home/cochrane/.rvm/scripts/rvm
-fi
 export PATH=$PATH:$HOME/node/bin
 
 export NVM_DIR="$HOME/.nvm"
@@ -177,11 +173,16 @@ then
     eval "$(/home/cochrane/.rakubrew/bin/rakubrew init Bash)"
 fi
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
 # only load Rust stuff if available
 if [ -d /home/cochrane/.cargo ]
 then
     . "$HOME/.cargo/env"
+fi
+
+# load Ruby version manager if available
+if [ -f /home/cochrane/.rvm/scripts/rvm ]
+then
+    source /home/cochrane/.rvm/scripts/rvm
+    # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+    export PATH="$PATH:$HOME/.rvm/bin"
 fi

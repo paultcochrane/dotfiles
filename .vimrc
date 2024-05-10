@@ -99,6 +99,8 @@ if has("autocmd")
 
     " html files shouldn't use tabs; they should use a 2-space indent
     autocmd BufRead,BufNewFile *.html set expandtab shiftwidth=2 softtabstop=2
+    " django template files shouldn't use tabs; they should use a 2-space indent
+    autocmd BufRead,BufNewFile *.djt set expandtab shiftwidth=2 softtabstop=2 ft=htmldjango
     " tmpl files are also html files
     autocmd BufRead,BufNewFile *.tmpl set expandtab shiftwidth=2 softtabstop=2 ft=html
     " tt files are also html files

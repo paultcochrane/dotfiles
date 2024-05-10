@@ -14,7 +14,7 @@ servers = (
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "no";
-    nick = "[ptc]";
+    nick = "ptc";
     chatnet = "raku";
   }
 );

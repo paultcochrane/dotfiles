@@ -179,4 +179,9 @@ fi
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-. "$HOME/.cargo/env"
+
+# only load Rust stuff if available
+if [ -d /home/cochrane/.cargo ]
+then
+    . "$HOME/.cargo/env"
+fi

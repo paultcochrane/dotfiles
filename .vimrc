@@ -249,6 +249,9 @@ function! AddCodaAndEncoding()
     if current_filetype == "perl"
         :execute "normal! 1GIuse strict;\<CR>use warnings;\<CR>\<CR>"
         normal! Go# vim: expandtab shiftwidth=4
+    elseif current_filetype == "perl6"
+        :execute "normal! 1GIuse v6;\<CR>\<CR>"
+        normal! Go# vim: expandtab shiftwidth=4
     elseif current_filetype == "python"
         :execute "normal! ggI# -*- coding: utf-8 -*-\<CR>\<CR>"
         normal! Go# vim: expandtab shiftwidth=4 softtabstop=4

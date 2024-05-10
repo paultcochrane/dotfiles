@@ -135,7 +135,7 @@ if has("autocmd")
     " recognise .cls as being TeX files
     autocmd BufRead,BufNewFile *.cls set ft=tex
     " recognise .md as being MarkDown format
-    autocmd BufRead,BufNewFile *.md set ft=markdown
+    autocmd BufRead,BufNewFile *.md set ft=markdown expandtab shiftwidth=4 softtabstop=4
     " make sql files use my editing options in absence of other settings
     autocmd BufRead,BufNewFile *.sql set ft=sql expandtab shiftwidth=2 softtabstop=2
     " make javascript files use my editing options in absence of other settings

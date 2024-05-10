@@ -18,7 +18,7 @@
 	  upstream_base_branch=$(git branch --remotes | grep 'origin/\\(HEAD\\|master\\)' | cut -d'>' -f2 | head -n 1); \
           git rebase \
             $(git merge-base --fork-point $upstream_base_branch \
-              $(git rev-parse --abbrev-ref HEAD)) -x \"$testcmd\"; \
+              $(git rev-parse --abbrev-ref HEAD)) -x \"git log -1 --oneline; $testcmd\"; \
         }; f"
 [color]
         ui = true

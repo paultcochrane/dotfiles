@@ -228,13 +228,18 @@ endfunction
 map <leader>a :call RunAcceptanceTests()<cr>
 
 function! RunAcceptanceTests()
-    " run Python 'behave' tests
-    if isdirectory('features/steps')
-        exec ":!behave --tags ~@wip"
-    elseif isdirectory('features/step_definitions')
-        exec ":!pherkin -l -t ~@wip"
-    else
-        echo "features/steps directory doesn't exist"
+    let current_filetype = &filetype
+    if current_filetype == "python"
+        " run Python 'behave' tests
+        if isdirectory('features/steps')
+            exec ":!behave --tags ~@wip"
+        elseif isdirectory('features/step_definitions')
+            exec ":!pherkin -l -t ~@wip"
+        else
+            echo "features/steps directory doesn't exist"
+        endif
+    elseif current_filetype == "javascript"
+        exec ":!make accept"
     endif
 endfunction
 

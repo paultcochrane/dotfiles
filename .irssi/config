@@ -9,7 +9,7 @@ servers = (
     chatnet = "perl5";
   },
   {
-    address = "irc.freenode.net";
+    address = "irc.libera.chat";
     port = "6667";
     use_ssl = "no";
     ssl_verify = "no";

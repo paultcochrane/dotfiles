@@ -147,6 +147,7 @@ export VISUAL=vim
 # turn off bell in console
 #setterm -blength 0
 
+# load perlbrew if available
 if [ -e $HOME/perl5/perlbrew/etc/bashrc ]
 then
     source $HOME/perl5/perlbrew/etc/bashrc
@@ -158,6 +159,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# load rakudobrew if available
 if [ -d /home/cochrane/.rakudobrew ]
 then
     eval "$(/home/cochrane/.rakubrew/bin/rakubrew init Bash)"

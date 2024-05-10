@@ -313,9 +313,18 @@ inoremap <s-tab> <c-n>
 
 " syntastic settings
 setlocal omnifunc=necoghc#omnifunc
-let g:syntastic_python_checkers = ['flake8']
-let g:syntastic_rst_checkers = ['Sphinx']
+let g:syntastic_debug = 0
 let g:syntastic_check_on_open = 1
+let g:syntastic_python_checkers = ['flake8']
+" let g:syntastic_javascript_eslint_generic = 1
+" let g:syntastic_javascript_eslint_exec = '/bin/ls'
+" let g:syntastic_javascript_eslint_exe = '$(npm bin)/eslint'
+" let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_rst_checkers = ['Sphinx']
+
+" coverage settings
+let g:coverage_json_report_path = 'coverage/jest/coverage-final.json'
+let g:coverage_show_uncovered = 1
 
 " map toggling tagbar window to F8
 nmap <F8> :TagbarToggle<CR>

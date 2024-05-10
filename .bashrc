@@ -142,11 +142,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-if [ -e /opt/intel/composerxe/bin/compilervars.sh ]
-then
-    source /opt/intel/composerxe/bin/compilervars.sh intel64
-fi
-
 export VISUAL=vim
 
 # turn off bell in console
@@ -155,11 +150,6 @@ export VISUAL=vim
 if [ -e $HOME/perl5/perlbrew/etc/bashrc ]
 then
     source $HOME/perl5/perlbrew/etc/bashrc
-fi
-
-if [ -e /opt/intel/bin/compilervars.sh ]
-then
-    source /opt/intel/bin/compilervars.sh intel64
 fi
 
 export PATH=$PATH:$HOME/node/bin

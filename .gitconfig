@@ -20,6 +20,7 @@
             $(git merge-base --fork-point $upstream_base_branch \
               $(git rev-parse --abbrev-ref HEAD)) -x \"git log -1 --oneline; $testcmd\"; \
         }; f"
+        trim = !"f() { git remote prune origin | grep prune | cut -d '/' -f2 | xargs --no-run-if-empty git branch -D; }; f"
 [color]
         ui = true
 [push]

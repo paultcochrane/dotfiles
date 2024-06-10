@@ -250,7 +250,7 @@ Install the [Vim Better
 Whitespace](http://github.com/ntpeters/vim-better-whitespace/ ) plugin:
 
     cd ~/.vim/bundle
-    git clone git://github.com/ntpeters/vim-better-whitespace.git
+    git clone https://github.com/ntpeters/vim-better-whitespace.git
 
 Since `flake8` is used to run Python syntax checking, the `flake8` package
 is also required:

@@ -260,6 +260,8 @@ function! AddCodaAndEncoding()
     elseif current_filetype == "sh"
         :execute "normal! ggI#!/bin/bash\<CR>\<CR>"
         normal! Go# vim: expandtab shiftwidth=4 softtabstop=4
+    elseif current_filetype == "markdown"
+        :execute "normal! 1GI---\<CR>title:\<CR>header:\<CR>  teaser: \"\"\<CR>  og_image: \"\"\<CR>categories:\<CR>---\<CR>\<CR>"
     endif
 endfunction
 

@@ -257,6 +257,12 @@ is also required:
 
     sudo aptitude install flake8
 
+Install the [vim-airline](https://github.com/vim-airline/vim-airline) plugin:
+
+    git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
+
+then run `:Helptags` to generate help tags.
+
 xmodmap
 -------
 

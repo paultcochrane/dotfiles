@@ -246,11 +246,6 @@ Install the [syntastic](https://github.com/scrooloose/syntastic) plugin:
     cd ~/.vim/bundle
     git clone https://github.com/scrooloose/syntastic.git
 
-Install the [Tagbar](http://majutsushi.github.io/tagbar/) plugin:
-
-    cd ~/.vim/bundle
-    git clone git://github.com/majutsushi/tagbar
-
 Install the [Vim Better
 Whitespace](http://github.com/ntpeters/vim-better-whitespace/ ) plugin:
 

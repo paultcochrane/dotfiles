@@ -8,8 +8,12 @@ endif
 
 if !has("gui_running")
     " colorscheme elflord
-    colorscheme ron
     " colorscheme pablo
+    if v:version < 900
+        colorscheme ron
+    else
+        colorscheme neon
+    endif
 endif
 
 " Use Vim settings, rather then Vi settings (much better!).

@@ -257,6 +257,9 @@ function! AddCodaAndEncoding()
         normal! Go# vim: expandtab shiftwidth=4 softtabstop=4
     elseif current_filetype == "javascript"
         normal! Go// vim: expandtab shiftwidth=4 softtabstop=4
+    elseif current_filetype == "sh"
+        :execute "normal! ggI#!/bin/bash\<CR>\<CR>"
+        normal! Go# vim: expandtab shiftwidth=4 softtabstop=4
     endif
 endfunction
 

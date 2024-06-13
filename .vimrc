@@ -128,9 +128,6 @@ if has("autocmd")
     autocmd BufRead,BufNewFile *.pm set ft=perl expandtab shiftwidth=4 softtabstop=4
     " make C files use my editing options in absence of other settings
     autocmd BufRead,BufNewFile *.c set ft=c expandtab shiftwidth=4 softtabstop=4
-    " recognise .pmc and .ops as being C files
-    autocmd BufRead,BufNewFile *.pmc set ft=c
-    autocmd BufRead,BufNewFile *.ops set ft=c
     " recognise .inc as being Fortran files
     autocmd BufRead,BufNewFile *.i set ft=fortran
     autocmd BufRead,BufNewFile *.inc set ft=fortran

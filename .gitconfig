@@ -15,9 +15,9 @@
         nuke = !"f() { git branch -d $1 && git push origin --delete $1; }; f"
         test-fork = !"f() { \
           [ x$# = x1 ] && testcmd=\"$1\" || testcmd='make test'; \
-	  upstream_base_branch=$(git branch --remotes | grep 'origin/\\(HEAD\\|master\\|main\\)' | cut -d'>' -f2 | head -n 1); \
-	  current_branch=$(git rev-parse --abbrev-ref HEAD); \
-	  fork_point=$(git merge-base --fork-point $upstream_base_branch $current_branch); \
+          upstream_base_branch=$(git branch --remotes | grep 'origin/\\(HEAD\\|master\\|main\\)' | cut -d'>' -f2 | head -n 1); \
+          current_branch=$(git rev-parse --abbrev-ref HEAD); \
+          fork_point=$(git merge-base --fork-point $upstream_base_branch $current_branch); \
           git rebase $fork_point -x \"git log -1 --oneline; $testcmd\"; \
         }; f"
         trim = !"f() { git remote prune origin | grep prune | cut -d '/' -f2 | xargs --no-run-if-empty git branch -D; }; f"

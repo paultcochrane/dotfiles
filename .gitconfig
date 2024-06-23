@@ -15,7 +15,7 @@
         nuke = !"f() { git branch -d $1 && git push origin --delete $1; }; f"
         test-fork = !"f() { \
           [ x$# = x1 ] && testcmd=\"$1\" || testcmd='make test'; \
-	  upstream_base_branch=$(git branch --remotes | grep 'origin/\\(HEAD\\|master\\)' | cut -d'>' -f2 | head -n 1); \
+	  upstream_base_branch=$(git branch --remotes | grep 'origin/\\(HEAD\\|master\\|main\\)' | cut -d'>' -f2 | head -n 1); \
           git rebase \
             $(git merge-base --fork-point $upstream_base_branch \
               $(git rev-parse --abbrev-ref HEAD)) -x \"git log -1 --oneline; $testcmd\"; \

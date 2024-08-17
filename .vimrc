@@ -12,6 +12,7 @@ if !has("gui_running")
     if v:version < 900
         colorscheme ron
     else
+        " requires Debian vim-scripts package to be installed
         colorscheme neon
     endif
 endif

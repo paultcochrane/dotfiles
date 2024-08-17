@@ -7,13 +7,13 @@ instructions for the respective software package.
 ## Initial setup
 
     su -
-    aptitude install sudo vim tmux git awesome terminator mutt xscreensaver \
+    apt install sudo vim tmux git awesome terminator mutt xscreensaver \
 	irssi moc
 
 abcde
 -----
 
-    sudo aptitude install abcde eyed3 lame python3-pylast
+    sudo apt install abcde eyed3 lame python3-pylast
     ln -s $HOME/dotfiles/.abcde.conf $HOME/.abcde.conf
 
 alacritty
@@ -27,7 +27,7 @@ awesome
 
 Install the necessary packages
 
-    sudo aptitude install awesome awesome-extra\
+    sudo apt install awesome awesome-extra\
 	gnome-icon-theme\
 	sensors-applet\
 	lua-expat
@@ -67,7 +67,7 @@ Make sure that libgweather's locations file is in the expected format for
 Ensure that `xscreensaver` is installed so that the screensaver
 functionality works.
 
-    sudo aptitude install xscreensaver
+    sudo apt install xscreensaver
 
 NOTE: The list of packages here might not be complete.
 
@@ -96,7 +96,7 @@ To install it, clone the repository and enter the repo directory:
 
 To build the sources, the following packages need to be installed:
 
-    sudo aptitude install autoconf automake libglib2.0-dev libgtk-3-dev \
+    sudo apt install autoconf automake libglib2.0-dev libgtk-3-dev \
 	libnotify-dev libpulse-dev libx11-dev pkg-config
 
 Now configure and build the project
@@ -122,18 +122,18 @@ bash
 bash-completion
 ---------------
 
-    sudo aptitude install bash-completion
+    sudo apt install bash-completion
 
 ghci
 ----
 
-    sudo aptitude install ghc-ghci
+    sudo apt install ghc-ghci
     ln -s $HOME/dotfiles/.ghci $HOME/.ghci
 
 git
 ---
 
-    sudo aptitude install git
+    sudo apt install git
     ln -s $HOME/dotfiles/.gitconfig $HOME/.gitconfig
     ln -s $HOME/dotfiles/.gitignore_global $HOME/.gitignore_global
 
@@ -145,7 +145,7 @@ inputrc
 irssi
 -----
 
-    sudo aptitude install irssi
+    sudo apt install irssi
     ln -s $HOME/dotfiles/.irssi $HOME/.irssi
 
 mailcap
@@ -158,12 +158,12 @@ mocp
 
 There aren't any dotfiles for this, but it's handy to have around.
 
-    sudo aptitude install moc
+    sudo apt install moc
 
 mutt
 ----
 
-    sudo aptitude install mutt
+    sudo apt install mutt
     ln -s $HOME/dotfiles/.muttrc_defaults $HOME/.muttrc_defaults
     ln -s $HOME/dotfiles/.muttrc_colours $HOME/.muttrc_colours
 
@@ -176,7 +176,7 @@ newsboat
 screen
 ------
 
-    sudo aptitude install screen
+    sudo apt install screen
     ln -s $HOME/dotfiles/.screenrc $HOME/.screenrc
 
 tmux
@@ -184,12 +184,12 @@ tmux
 
 Install `tmux` and link the dotfile:
 
-    sudo aptitude install tmux
+    sudo apt install tmux
     ln -s $HOME/dotfiles/.tmux.conf $HOME/.tmux.conf
 
 Install tmux-mem-cpu-load in `$HOME/bin`:
 
-    sudo aptitude install cmake g++
+    sudo apt install cmake g++
     git clone https://github.com/thewtex/tmux-mem-cpu-load.git
     cd tmux-mem-cpu-load
     cmake .
@@ -202,7 +202,7 @@ vim
 
 Install `vim` and link the dotfile:
 
-    sudo aptitude install vim vim-gtk
+    sudo apt install vim vim-gtk
     ln -s $HOME/dotfiles/.vimrc $HOME/.vimrc
 
 `vim-gtk` is necessary so that Ruby support is available in `vim` so that
@@ -210,7 +210,7 @@ the `Command-T` plugin works.
 
 Install the [pathogen](https://github.com/tpope/vim-pathogen) plugin:
 
-    sudo aptitude install curl
+    sudo apt install curl
     mkdir -p ~/.vim/autoload ~/.vim/bundle
     curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
@@ -221,7 +221,7 @@ Install the [ctrlp](https://github.com/ctrlpvim/ctrlp.vim) plugin:
 
 Install the [Command-T](https://wincent.com/products/command-t) plugin:
 
-    sudo aptitude install -y ruby ruby-dev make
+    sudo apt install -y ruby ruby-dev make
     cd ~/.vim
     git clone https://github.com/wincent/command-t.git bundle/command-t
     cd ~/.vim/bundle/command-t/ruby/command-t/ext/command-t/
@@ -255,7 +255,7 @@ Whitespace](http://github.com/ntpeters/vim-better-whitespace/ ) plugin:
 Since `flake8` is used to run Python syntax checking, the `flake8` package
 is also required:
 
-    sudo aptitude install flake8
+    sudo apt install flake8
 
 Install the [vim-airline](https://github.com/vim-airline/vim-airline) plugin:
 
@@ -271,13 +271,13 @@ xmodmap
 xpdf
 ----
 
-    sudo aptitude install xpdf
+    sudo apt install xpdf
     ln -s $HOME/dotfiles/.xpdfrc $HOME/.xpdfrc
 
 xplanet
 -------
 
-    sudo aptitude install xplanet
+    sudo apt install xplanet
     ln -s $HOME/dotfiles/.xplanet $HOME/.xplanet
     mkdir $HOME/.xplanet/cloud_maps
 

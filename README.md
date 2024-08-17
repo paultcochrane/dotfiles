@@ -7,8 +7,7 @@ instructions for the respective software package.
 ## Initial setup
 
     su -
-    apt install sudo vim tmux git awesome terminator mutt xscreensaver \
-	irssi moc
+    apt install sudo vim tmux git awesome alacritty mutt xscreensaver irssi moc
 
 abcde
 -----

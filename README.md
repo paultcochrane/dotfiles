@@ -209,9 +209,9 @@ the `Command-T` plugin works.
 
 Install the [pathogen](https://github.com/tpope/vim-pathogen) plugin:
 
-    sudo apt install curl
-    mkdir -p ~/.vim/autoload ~/.vim/bundle
-    curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+```shell
+sudo apt install vim-pathogen
+```
 
 Install the [ctrlp](https://github.com/ctrlpvim/ctrlp.vim) plugin:
 

@@ -263,7 +263,16 @@ function! AddCodaAndEncoding()
         :execute "normal! ggI#!/bin/bash\<CR>\<CR>"
         normal! Go# vim: expandtab shiftwidth=4 softtabstop=4
     elseif current_filetype == "markdown"
-        :execute "normal! 1GI---\<CR>title:\<CR>header:\<CR>  teaser: \"\"\<CR>  og_image: \"\"\<CR>categories:\<CR>---\<CR>\<CR>"
+        let markdown_frontmatter = "normal! 1GI---\<CR>title:\<CR>header:\<CR>
+          \  teaser: \"\"\<CR>  og_image: \"\"\<CR>categories:\<CR>---\<CR>\<CR>
+          \{% include figure \<CR>
+          \  image_path=\"/assets/images/\" \<CR>
+          \  alt=\"\" \<CR>
+          \  caption=\"\" \<CR>
+          \  class=\"feature-figure\" \<CR>
+          \%}\<CR>\<CR>"
+
+        :execute markdown_frontmatter
     endif
 endfunction
 

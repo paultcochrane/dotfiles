@@ -365,4 +365,10 @@ let g:airline_left_sep = '⮀'
 let g:airline_right_sep = '⮂'
 let g:airline_symbols.branch = '⭠'
 
+call plug#begin()
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+call plug#end()
+
+let g:mkdp_refresh_slow = 1
+
 " vim: expandtab shiftwidth=4

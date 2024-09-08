@@ -134,8 +134,9 @@ if has("autocmd")
     autocmd BufRead,BufNewFile *.inc set ft=fortran
     " recognise .runfile as being ini files
     autocmd BufRead,BufNewFile *.runfile set ft=dosini
-    " recognise .cls as being TeX files
-    autocmd BufRead,BufNewFile *.cls set ft=tex
+    " recognise .cls, .tex as being TeX files
+    autocmd BufRead,BufNewFile *.cls set ft=tex expandtab shiftwidth=4 softtabstop=4
+    autocmd BufRead,BufNewFile *.tex set ft=tex expandtab shiftwidth=4 softtabstop=4
     " recognise .md as being MarkDown format
     autocmd BufRead,BufNewFile *.md set ft=markdown expandtab shiftwidth=4 softtabstop=4
     " make sql files use my editing options in absence of other settings

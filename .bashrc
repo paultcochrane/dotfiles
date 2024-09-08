@@ -168,3 +168,9 @@ then
     # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
     export PATH="$PATH:$HOME/.rvm/bin"
 fi
+
+# enable pipx bin path if available
+if [ -f "$HOME/.local/bin" ]
+then
+    export PATH="$PATH:$HOME/.local/bin"
+fi

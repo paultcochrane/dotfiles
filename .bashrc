@@ -170,7 +170,7 @@ then
 fi
 
 # enable pipx bin path if available
-if [ -f "$HOME/.local/bin" ]
+if [ -d "$HOME/.local/bin" ]
 then
     export PATH="$PATH:$HOME/.local/bin"
 fi

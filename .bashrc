@@ -149,8 +149,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# load rakudobrew if available
-if [ -d /home/cochrane/.rakudobrew ]
+# load rakubrew if available
+if [ -d /home/cochrane/.rakubrew ]
 then
     eval "$(/home/cochrane/.rakubrew/bin/rakubrew init Bash)"
 fi

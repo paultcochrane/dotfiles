@@ -353,6 +353,9 @@ nnoremap <leader>i gg<C-V>G=
 " run `git ci -p`
 nnoremap <leader>c :exec "!git ci -p"<CR>
 
+" insert beamer frame template
+nnoremap <leader>F o\begin{frame}[fragile]{}<cr>\begin{itemize}<cr>\item<cr>\end{itemize}<cr>\end{frame}<cr>%stopzone<cr><esc>6k$i
+
 set visualbell
 
 filetype off

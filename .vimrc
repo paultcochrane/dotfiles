@@ -355,6 +355,8 @@ nnoremap <leader>c :exec "!git ci -p"<CR>
 
 " insert beamer frame template
 nnoremap <leader>F o\begin{frame}[fragile]{}<cr>\begin{itemize}<cr>\item<cr>\end{itemize}<cr>\end{frame}<cr>%stopzone<cr><esc>6k$i
+" insert itemize boilerplate
+nnoremap <leader>I o\begin{itemize}<cr>\item <cr>\end{itemize}<cr><esc>kkA
 
 set visualbell
 

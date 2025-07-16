@@ -144,12 +144,11 @@ if has("autocmd")
     " make javascript files use my editing options in absence of other settings
     autocmd BufRead,BufNewFile *.js set ft=javascript expandtab shiftwidth=4 softtabstop=4
     " make typescript files use my editing options in absence of other settings
-    autocmd BufRead,BufNewFile *.ts set ft=typescript expandtab shiftwidth=4 softtabstop=4
+    autocmd BufRead,BufNewFile *.ts set ft=typescript expandtab shiftwidth=2 softtabstop=2
     " Jenkinsfiles are Groovy-formatted
     autocmd BufRead,BufNewFile Jenkinsfile set ft=groovy expandtab shiftwidth=4 softtabstop=4
     " recognise any file matching "Dockerfile" as a Dockerfile
     autocmd BufRead,BufNewFile *Dockerfile* set ft=dockerfile expandtab shiftwidth=4 softtabstop=4
-
 else
 
     set autoindent              " always set autoindenting on

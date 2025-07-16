@@ -347,8 +347,8 @@ let g:syntastic_rst_checkers = ['Sphinx']
 let g:coverage_json_report_path = 'coverage/jest/coverage-final.json'
 let g:coverage_show_uncovered = 1
 
-" map indent the entire file with <leader>I
-nnoremap <leader>I gg<C-V>G=
+" map indent the entire file
+nnoremap <leader>i gg<C-V>G=
 
 " run `git ci -p`
 nnoremap <leader>c :exec "!git ci -p"<CR>

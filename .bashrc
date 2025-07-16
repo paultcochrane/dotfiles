@@ -174,3 +174,6 @@ if [ -d "$HOME/.local/bin" ]
 then
     export PATH="$PATH:$HOME/.local/bin"
 fi
+
+# avoid using keyring when adding/installing Python packages via poetry
+export PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring

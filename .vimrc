@@ -245,6 +245,16 @@ function! RunAcceptanceTests()
     endif
 endfunction
 
+" run 'l'inter checks with <leader>l
+map <leader>l :call RunLinterChecks()<cr>
+
+function! RunLinterChecks()
+    let current_filetype = &filetype
+    if current_filetype == "python"
+        exec ":!make lint"
+    endif
+endfunction
+
 " add vim coda (and if necessary encoding) depending on filetype
 function! AddCodaAndEncoding()
     let current_filetype = &filetype

@@ -216,10 +216,10 @@ function! RunTestsForThisFile()
     elseif current_filetype == "python"
         let filename = expand("%:t")
         if match(filename, 'test_.*.py$') != -1
-            exec ":!nosetests --rednose %"
+            exec ":!pytest %"
         elseif match(filename, '.*.py$') != -1
             :echo filename
-            exec ":!find ./ -name test_" . filename . "| xargs nosetests --rednose"
+            exec ":!find ./ -name test_" . filename . "| xargs pytest"
         else
             :echo filename
         endif

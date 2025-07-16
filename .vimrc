@@ -264,7 +264,7 @@ function! AddCodaAndEncoding()
         normal! Go# vim: expandtab shiftwidth=4 softtabstop=4
     elseif current_filetype == "markdown"
         let markdown_frontmatter = "normal! 1GI---\<CR>title:\<CR>header:\<CR>
-          \  teaser: \"\"\<CR>  og_image:\"\"\<CR>categories:\<CR>---\<CR>\<CR>
+          \  teaser: \"/assets/images/\"\<CR>  og_image: \"/assets/images/\"\<CR>categories:\<CR>---\<CR>\<CR>
           \{% include figure\<CR>
           \  image_path=\"/assets/images/\"\<CR>
           \  alt=\"\"\<CR>

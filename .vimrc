@@ -273,6 +273,11 @@ function! AddCodaAndEncoding()
           \%}\<CR>\<CR>"
 
         :execute markdown_frontmatter
+    elseif current_filetype == "tex"
+        let latex_frontmatter = "normal! ggI\\documentclass{standalone}\<CR>\<CR>
+          \\\begin{document}\<CR>\<CR>
+          \\\end{document}"
+        :execute latex_frontmatter
     endif
 endfunction
 
